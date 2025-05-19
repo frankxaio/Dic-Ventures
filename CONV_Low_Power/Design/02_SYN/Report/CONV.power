@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CONV
+Version: T-2022.03-SP2
+Date   : Mon May 19 12:03:50 2025
+****************************************
+
+
+Library(s) Used:
+
+    UDVS_u018mmwc162v (File: /cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/SynopsysDC/db/UDVS_u018mmwc162v.db)
+
+
+Operating Conditions: WC1D62VCOM   Library: UDVS_u018mmwc162v
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CONV                   udp8K_Conservative
+                                         UDVS_u018mmwc162v
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   5.9841 mW   (53%)
+  Net Switching Power  =   5.2383 mW   (47%)
+                         ---------
+Total Dynamic Power    =  11.2225 mW  (100%)
+
+Cell Leakage Power     =   5.4523 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.7905            0.2305           32.9092            0.3581  (   3.19%)  i
+register           0.4902            0.3637          607.7855            1.5174  (  13.51%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      4.7034            4.6441        4.8116e+03            9.3524  (  83.30%)
+--------------------------------------------------------------------------------------------------
+Total              5.9841 mW         5.2383 mW     5.4523e+03 nW        11.2279 mW
+1

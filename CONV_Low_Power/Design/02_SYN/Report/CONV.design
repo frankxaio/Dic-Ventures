@@ -1,0 +1,98 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : design
+Design : CONV
+Version: T-2022.03-SP2
+Date   : Mon May 19 12:03:50 2025
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    UDVS_u018mmwc162v (File: /cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/SynopsysDC/db/UDVS_u018mmwc162v.db)
+
+Local Link Library:
+
+    {UDVS_u018mmwc162v.db, UDVS_u018mmbc198v.db, UDVS_u018mmtc18v.db, U018IOCUP_tc18vt33v.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WC1D62VCOM
+    Library : UDVS_u018mmwc162v
+    Process :   1.00
+    Temperature : 125.00
+    Voltage :   1.62
+    Interconnect Model : balanced_tree
+
+Min Operating Conditions:
+
+
+    Operating Condition Name : BC1D98VCOM
+    Library : UDVS_u018mmbc198v
+    Process :   1.00
+    Temperature :   0.00
+    Voltage :   1.98
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   udp8K_Conservative
+Location       :   UDVS_u018mmwc162v
+Resistance     :   1e-05
+Capacitance    :   1
+Area           :   0
+Slope          :   0.0053
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.01
+     2     0.01
+     3     0.02
+     4     0.03
+     5     0.04
+     6     0.05
+     7     0.05
+     8     0.06
+     9     0.07
+    10     0.08
+
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1

@@ -1,0 +1,2 @@
+$ROOT_PATH/00_TESTBED/testfixture.sv
+$ROOT_PATH/01_RTL/CONV.sv
