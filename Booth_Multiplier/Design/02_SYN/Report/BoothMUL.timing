@@ -1,0 +1,147 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : BoothMUL
+Version: T-2022.03-SP2
+Date   : Thu May 22 00:18:46 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Y[3] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BoothMUL           tsmc18_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  Y[3] (in)                                0.01       0.01 f
+  U425/Y (INVXL)                           0.16       0.17 r
+  U426/Y (INVX1)                           0.75       0.92 f
+  U432/Y (INVX1)                           1.55       2.47 r
+  U259/Y (AOI222XL)                        0.70       3.17 f
+  U264/Y (NOR2XL)                          1.57       4.74 r
+  U299/Y (AOI22XL)                         0.82       5.56 f
+  U266/Y (MXI2XL)                          0.64       6.20 r
+  U265/Y (AOI22XL)                         0.26       6.45 f
+  U451/Y (OAI21XL)                         0.32       6.78 r
+  U452/Y (OAI21XL)                         0.37       7.15 f
+  U311/Y (NOR2XL)                          0.54       7.69 r
+  U375/Y (NAND2BXL)                        0.65       8.34 r
+  U374/Y (AOI2BB2XL)                       0.37       8.71 r
+  U373/Y (XOR2XL)                          0.60       9.31 f
+  U372/Y (NAND2XL)                         0.24       9.55 r
+  U471/Y (OAI21XL)                         0.31       9.86 f
+  U252/Y (AND2XL)                          0.45      10.31 f
+  U251/CO (ADDFX1)                         0.61      10.92 f
+  U250/CO (ADDFX1)                         0.41      11.34 f
+  U249/CO (ADDFX1)                         0.41      11.75 f
+  U248/CO (ADDFX1)                         0.41      12.16 f
+  U247/CO (ADDFX1)                         0.41      12.58 f
+  U246/CO (ADDFX1)                         0.42      13.00 f
+  U245/CO (ADDFX1)                         0.59      13.59 f
+  U244/CO (ADDFX1)                         0.39      13.98 f
+  U473/Y (INVXL)                           0.63      14.61 r
+  P[15] (out)                              0.00      14.61 r
+  data arrival time                                  14.61
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: Y[3] (input port)
+  Endpoint: P[14] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BoothMUL           tsmc18_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  Y[3] (in)                                0.01       0.01 f
+  U425/Y (INVXL)                           0.16       0.17 r
+  U426/Y (INVX1)                           0.75       0.92 f
+  U432/Y (INVX1)                           1.55       2.47 r
+  U259/Y (AOI222XL)                        0.70       3.17 f
+  U264/Y (NOR2XL)                          1.57       4.74 r
+  U299/Y (AOI22XL)                         0.82       5.56 f
+  U266/Y (MXI2XL)                          0.64       6.20 r
+  U265/Y (AOI22XL)                         0.26       6.45 f
+  U451/Y (OAI21XL)                         0.32       6.78 r
+  U452/Y (OAI21XL)                         0.37       7.15 f
+  U311/Y (NOR2XL)                          0.54       7.69 r
+  U375/Y (NAND2BXL)                        0.65       8.34 r
+  U374/Y (AOI2BB2XL)                       0.37       8.71 r
+  U373/Y (XOR2XL)                          0.69       9.40 r
+  U372/Y (NAND2XL)                         0.21       9.61 f
+  U471/Y (OAI21XL)                         0.36       9.97 r
+  U252/Y (AND2XL)                          0.50      10.47 r
+  U251/CO (ADDFX1)                         0.70      11.17 r
+  U250/CO (ADDFX1)                         0.38      11.55 r
+  U249/CO (ADDFX1)                         0.38      11.94 r
+  U248/CO (ADDFX1)                         0.38      12.32 r
+  U247/CO (ADDFX1)                         0.38      12.70 r
+  U246/CO (ADDFX1)                         0.39      13.09 r
+  U245/CO (ADDFX1)                         0.66      13.74 r
+  U244/S (ADDFX1)                          0.76      14.50 r
+  P[14] (out)                              0.00      14.50 r
+  data arrival time                                  14.50
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: Y[3] (input port)
+  Endpoint: P[13] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BoothMUL           tsmc18_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  Y[3] (in)                                0.01       0.01 f
+  U425/Y (INVXL)                           0.16       0.17 r
+  U426/Y (INVX1)                           0.75       0.92 f
+  U432/Y (INVX1)                           1.55       2.47 r
+  U259/Y (AOI222XL)                        0.70       3.17 f
+  U264/Y (NOR2XL)                          1.57       4.74 r
+  U299/Y (AOI22XL)                         0.82       5.56 f
+  U266/Y (MXI2XL)                          0.64       6.20 r
+  U265/Y (AOI22XL)                         0.26       6.45 f
+  U451/Y (OAI21XL)                         0.32       6.78 r
+  U452/Y (OAI21XL)                         0.37       7.15 f
+  U311/Y (NOR2XL)                          0.54       7.69 r
+  U375/Y (NAND2BXL)                        0.65       8.34 r
+  U374/Y (AOI2BB2XL)                       0.37       8.71 r
+  U373/Y (XOR2XL)                          0.69       9.40 r
+  U372/Y (NAND2XL)                         0.21       9.61 f
+  U471/Y (OAI21XL)                         0.36       9.97 r
+  U252/Y (AND2XL)                          0.50      10.47 r
+  U251/CO (ADDFX1)                         0.70      11.17 r
+  U250/CO (ADDFX1)                         0.38      11.55 r
+  U249/CO (ADDFX1)                         0.38      11.94 r
+  U248/CO (ADDFX1)                         0.38      12.32 r
+  U247/CO (ADDFX1)                         0.38      12.70 r
+  U246/CO (ADDFX1)                         0.39      13.09 r
+  U245/S (ADDFX1)                          0.90      13.99 r
+  P[13] (out)                              0.00      13.99 r
+  data arrival time                                  13.99
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

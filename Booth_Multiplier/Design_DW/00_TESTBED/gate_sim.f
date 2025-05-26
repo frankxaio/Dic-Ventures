@@ -1,0 +1,2 @@
+$ROOT_PATH/00_TESTBED/BoothMUL_tb.v
+$ROOT_PATH/02_SYN/Netlist/BoothMUL_syn.v

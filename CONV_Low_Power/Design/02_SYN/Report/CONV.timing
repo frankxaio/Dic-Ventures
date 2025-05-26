@@ -6,10 +6,10 @@ Report : timing
         -max_paths 3
 Design : CONV
 Version: T-2022.03-SP2
-Date   : Mon May 19 12:03:50 2025
+Date   : Thu May 22 19:17:15 2025
 ****************************************
 
-Operating Conditions: WC1D62VCOM   Library: UDVS_u018mmwc162v
+Operating Conditions: WC1D08VCOM   Library: UDVS_u018mmwc108v
 Wire Load Model Mode: top
 
   Startpoint: ready (input port clocked by clk)
@@ -20,7 +20,7 @@ Wire Load Model Mode: top
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  CONV               udp8K_Conservative    UDVS_u018mmwc162v
+  CONV               udp8K_Conservative    UDVS_u018mmwc108v
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
@@ -28,13 +28,13 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             1.00       1.00
   input external delay                                    3.00       4.00 f
   ready (in)                                              0.01       4.01 f
-  U1613/ZN (ND2D2)                                        0.04       4.06 r
-  U1614/ZN (ND2D1)                                        0.14       4.19 f
-  U1615/ZN (ND2D1)                                        0.12       4.32 r
-  U1616/ZN (ND4D2)                                        0.34       4.66 f
-  U1622/ZN (NR2D1)                                        0.23       4.88 r
-  U1623/ZN (ND2D2)                                        0.21       5.10 f
-  U1624/ZN (INVD2)                                        0.14       5.24 r
+  U1645/ZN (ND2D2)                                        0.05       4.06 r
+  U1647/ZN (ND2D1)                                        0.13       4.19 f
+  U1648/ZN (ND2D1)                                        0.13       4.32 r
+  U1649/ZN (ND4D2)                                        0.34       4.66 f
+  U1655/ZN (NR2D1)                                        0.23       4.89 r
+  U1656/ZN (ND2D2)                                        0.21       5.10 f
+  U1657/ZN (INVD2)                                        0.14       5.24 r
   clk_gate_caddr_rd_reg/EN (SNPS_CLOCK_GATE_HIGH_CONV_2)
                                                           0.00       5.24 r
   clk_gate_caddr_rd_reg/latch/D (LND1)                    0.00       5.24 r
@@ -74,7 +74,7 @@ Wire Load Model Mode: top
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  CONV               udp8K_Conservative    UDVS_u018mmwc162v
+  CONV               udp8K_Conservative    UDVS_u018mmwc108v
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
@@ -82,12 +82,12 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             1.00       1.00
   input external delay                                    3.00       4.00 f
   ready (in)                                              0.01       4.01 f
-  U1613/ZN (ND2D2)                                        0.04       4.06 r
-  U1614/ZN (ND2D1)                                        0.14       4.19 f
-  U1615/ZN (ND2D1)                                        0.12       4.32 r
-  U1616/ZN (ND4D2)                                        0.34       4.66 f
-  U1618/ZN (ND3D2)                                        0.29       4.95 r
-  U2697/ZN (ND2D1)                                        0.16       5.11 f
+  U1645/ZN (ND2D2)                                        0.05       4.06 r
+  U1647/ZN (ND2D1)                                        0.13       4.19 f
+  U1648/ZN (ND2D1)                                        0.13       4.32 r
+  U1649/ZN (ND4D2)                                        0.34       4.66 f
+  U1651/ZN (ND3D2)                                        0.29       4.95 r
+  U2759/ZN (ND2D1)                                        0.16       5.11 f
   clk_gate_ST_CONV_cnt_reg/EN (SNPS_CLOCK_GATE_HIGH_CONV_6)
                                                           0.00       5.11 f
   clk_gate_ST_CONV_cnt_reg/latch/D (LND1)                 0.00       5.11 f
@@ -127,7 +127,7 @@ Wire Load Model Mode: top
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  CONV               udp8K_Conservative    UDVS_u018mmwc162v
+  CONV               udp8K_Conservative    UDVS_u018mmwc108v
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
@@ -135,12 +135,12 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             1.00       1.00
   input external delay                                    3.00       4.00 f
   ready (in)                                              0.01       4.01 f
-  U1613/ZN (ND2D2)                                        0.04       4.06 r
-  U1614/ZN (ND2D1)                                        0.14       4.19 f
-  U1615/ZN (ND2D1)                                        0.12       4.32 r
-  U1616/ZN (ND4D2)                                        0.34       4.66 f
-  U1618/ZN (ND3D2)                                        0.29       4.95 r
-  U2695/ZN (INVD1)                                        0.14       5.09 f
+  U1645/ZN (ND2D2)                                        0.05       4.06 r
+  U1647/ZN (ND2D1)                                        0.13       4.19 f
+  U1648/ZN (ND2D1)                                        0.13       4.32 r
+  U1649/ZN (ND4D2)                                        0.34       4.66 f
+  U1651/ZN (ND3D2)                                        0.29       4.95 r
+  U2757/ZN (INVD1)                                        0.14       5.09 f
   clk_gate_iaddr_reg/EN (SNPS_CLOCK_GATE_HIGH_CONV_7)     0.00       5.09 f
   clk_gate_iaddr_reg/latch/D (LND1)                       0.00       5.09 f
   data arrival time                                                  5.09

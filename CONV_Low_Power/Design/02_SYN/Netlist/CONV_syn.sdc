@@ -1,15 +1,15 @@
 ###################################################################
 
-# Created by write_sdc on Mon May 19 12:03:50 2025
+# Created by write_sdc on Thu May 22 19:17:16 2025
 
 ###################################################################
 set sdc_version 2.1
 
 set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
-set_operating_conditions -max WC1D62VCOM -max_library UDVS_u018mmwc162v\
-                         -min BC1D98VCOM -min_library UDVS_u018mmbc198v
+set_operating_conditions -max WC1D08VCOM -max_library UDVS_u018mmwc108v\
+                         -min BC1D32VCOM -min_library UDVS_u018mmbc132v
 set_wire_load_mode top
-set_wire_load_model -name udp8K_Conservative -library UDVS_u018mmwc162v
+set_wire_load_model -name udp8K_Conservative -library UDVS_u018mmwc108v
 set_max_area 0
 set_load -pin_load 0.05 [get_ports busy]
 set_load -pin_load 0.05 [get_ports {iaddr[11]}]

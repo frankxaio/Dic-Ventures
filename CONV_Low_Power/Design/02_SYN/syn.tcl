@@ -1,11 +1,11 @@
 #======================================================
 # SECTION (A) Global Parameters
 #======================================================
-set DESIGN  "CONV"
+set DESIGN  "CONV" ;#! Modify
 set VERSION "v1"
 set CYCLE  6.0
-set INPUT_DLY   [expr $CYCLE/2]
-set OUTPUT_DLY  [expr $CYCLE/2]
+set INPUT_DLY   [expr {$CYCLE/2}]
+set OUTPUT_DLY  [expr {$CYCLE/2}]
 set CLOCK_NAME "clk"
 set RESET_NAME "reset"
 
@@ -16,6 +16,15 @@ if {[info exists env(ROOT_PATH)]} {
     puts "ROOT_PATH is not set"
 }
 
+
+# Specify temporary folder
+set temp_dir "work"
+file mkdir $temp_dir
+
+# Define temporary design library
+define_design_lib WORK -path "./work"
+
+
 #!SECTION
 
 
@@ -25,6 +34,7 @@ if {[info exists env(ROOT_PATH)]} {
 
 set hdlin_auto_save_templates TRUE
 analyze -format sverilog "$ROOT_PATH/01_RTL/CONV.sv"
+
 elaborate $DESIGN
 current_design $DESIGN
 link
@@ -35,8 +45,25 @@ link
 # SECTION (C) Global Setting
 #======================================================
 set_wire_load_mode top
-set_wire_load_model -name udp8K_Conservative -library UDVS_u018mmwc162v
-set_operating_conditions -max WC1D62VCOM -max_library UDVS_u018mmwc162v  -min BC1D98VCOM -min_library UDVS_u018mmbc198v
+
+# U18 1.8v
+# set_wire_load_model -name udp8K_Conservative -library UDVS_u018mmwc162v
+# set_operating_conditions -max WC1D62VCOM -max_library UDVS_u018mmwc162v  -min BC1D98VCOM -min_library UDVS_u018mmbc198v
+
+U18 1.2v
+set_wire_load_model -name udp8K_Conservative -library UDVS_u018mmwc108v
+set_operating_conditions -max WC1D08VCOM -max_library UDVS_u018mmwc108v \
+                         -min BC1D32VCOM -min_library UDVS_u018mmbc132v
+
+# U18 0.6v
+# set_wire_load_model -name udp8K_Conservative -library UDVS_u018mmwc054v
+# set_operating_conditions -max WC0D54VCOM -max_library UDVS_u018mmwc054v \
+#                          -min BC0D66VCOM -min_library UDVS_u018mmbc066v
+
+
+# T18
+# set_wire_load_model -name tsmc18_wl10 -library slow
+# set_operating_conditions -min_library fast -min fast  -max_library slow -max slow
 
 #!SECTION
 
@@ -113,7 +140,7 @@ set case_analysis_with_logic_constants true
 
 # SAIF Power Analysis & Optimization
 #ANCHOR - SAIF
-read_saif -input $ROOT_PATH/03_GATE/$DESIGN.saif -instance_name testfixture/u_CONV
+# read_saif -input $ROOT_PATH/03_GATE/$DESIGN.saif -instance_name testfixture/u_CONV ;#! Modify
 set_dynamic_optimization true
 set_leakage_optimization true
 set_clock_gating_style -sequential_cell latch
@@ -121,7 +148,6 @@ set_clock_gating_style -sequential_cell latch
 # (E-1)
 # compile_ultra
 compile_ultra -gate_clock
-
 compile_ultra -inc -gate_clock
 
 # (E-2)
@@ -192,8 +218,3 @@ report_timing
 exit
 
 #!SECTION
-
-
-
-
-

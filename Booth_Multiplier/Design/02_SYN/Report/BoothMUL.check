@@ -1,0 +1,106 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP2
+Date:        Thu May 22 00:18:41 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     77
+    Feedthrough (LINT-29)                                           8
+    Shorted outputs (LINT-31)                                      33
+    Constant outputs (LINT-52)                                     36
+
+Cells                                                               2
+    Connected to power or ground (LINT-32)                          2
+
+Nets                                                                3
+    Unloaded nets (LINT-2)                                          3
+--------------------------------------------------------------------------------
+
+Warning: In design 'BoothMUL', net 'u_pp_compressor42/carry_chain[16]' driven by pin 'u_pp_compressor42/gen_compressors[15].u_compressor/cout' has no loads. (LINT-2)
+Warning: In design 'BoothMUL', net 'u_pp_compressor42/carry_comb[15]' driven by pin 'u_pp_compressor42/gen_compressors[15].u_compressor/C' has no loads. (LINT-2)
+Warning: In design 'BoothMUL', net 'u_pp_compressor32/carry_comb[15]' driven by pin 'u_pp_compressor32/gen_compressors[15].u_compressor/Co' has no loads. (LINT-2)
+Warning: In design 'BoothEncoder', input port 'Y[7]' is connected directly to output port 'invert_X[3]'. (LINT-29)
+Warning: In design 'BoothEncoder', input port 'Y[5]' is connected directly to output port 'invert_X[2]'. (LINT-29)
+Warning: In design 'BoothEncoder', input port 'Y[3]' is connected directly to output port 'invert_X[1]'. (LINT-29)
+Warning: In design 'BoothEncoder', input port 'Y[1]' is connected directly to output port 'invert_X[0]'. (LINT-29)
+Warning: In design 'booth_pp_gen', input port 'invert_X[3]' is connected directly to output port 'sign_comp[6]'. (LINT-29)
+Warning: In design 'booth_pp_gen', input port 'invert_X[2]' is connected directly to output port 'pp3[4]'. (LINT-29)
+Warning: In design 'booth_pp_gen', input port 'invert_X[1]' is connected directly to output port 'pp2[2]'. (LINT-29)
+Warning: In design 'booth_pp_gen', input port 'invert_X[0]' is connected directly to output port 'pp1[0]'. (LINT-29)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[0]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[1]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[2]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[3]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[4]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[5]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[7]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[8]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[9]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[10]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[11]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[12]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[13]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[14]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'sign_comp[15]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp3[0]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp3[1]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp3[2]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp3[3]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp3[5]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp2[0]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp2[1]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp2[3]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp2[15]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp1[1]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp1[13]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp1[14]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp1[15]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp0[12]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp0[13]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to output port 'pp0[14]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp0[10]' is connected directly to output port 'pp0[9]'. (LINT-31)
+Warning: In design 'booth_pp_gen', output port 'pp1[12]' is connected directly to output port 'pp2[14]'. (LINT-31)
+Warning: In design 'BoothMUL', a pin on submodule 'u_cla_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Cin' is connected to logic 0. 
+Warning: In design 'pp_compressor42', a pin on submodule 'gen_compressors[0].u_compressor' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Cin' is connected to logic 0. 
+Warning: In design 'booth_pp_gen', output port 'pp0[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp0[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp0[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp0[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp1[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp1[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp1[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp1[12]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp1[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp2[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp2[14]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp2[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp2[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp2[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp3[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp3[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp3[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp3[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'pp3[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[11]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[8]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'booth_pp_gen', output port 'sign_comp[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'pp_compressor42', output port 'carry_out[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'pp_compressor32', output port 'carry_out[0]' is connected directly to 'logic 0'. (LINT-52)
+1

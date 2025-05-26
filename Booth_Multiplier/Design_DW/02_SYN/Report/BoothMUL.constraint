@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : BoothMUL
+Version: T-2022.03-SP2
+Date   : Wed May 21 23:37:54 2025
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   BoothMUL                     0.00       24649.65       -24649.65 (VIOLATED)
+
+
+1

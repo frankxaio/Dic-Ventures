@@ -3,12 +3,12 @@
 Report : resources
 Design : CONV
 Version: T-2022.03-SP2
-Date   : Mon May 19 12:03:50 2025
+Date   : Thu May 22 19:17:15 2025
 ****************************************
 
 
 Resource Report for this hierarchy in file
-        /home/host/Documents/CGU-EE006-APR/w13_Final/Design/01_RTL/CONV.sv
+        /home/host/Documents/DIC-Ventures/CONV_Low_Power/Design/01_RTL/CONV.sv
 =============================================================================
 | Cell           | Module         | Parameters | Contained Operations       |
 =============================================================================

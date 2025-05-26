@@ -4,7 +4,7 @@ Information: Updating design information... (UID-85)
 Report : design
 Design : CONV
 Version: T-2022.03-SP2
-Date   : Mon May 19 12:03:50 2025
+Date   : Thu May 22 19:17:15 2025
 ****************************************
 
 Design allows ideal nets on clock nets.
@@ -15,7 +15,7 @@ Library(s) Used:
 
 Local Link Library:
 
-    {UDVS_u018mmwc162v.db, UDVS_u018mmbc198v.db, UDVS_u018mmtc18v.db, U018IOCUP_tc18vt33v.db}
+    {UDVS_u018mmwc162v.db, UDVS_u018mmwc054v.db, UDVS_u018mmwc108v.db, UDVS_u018mmbc198v.db, UDVS_u018mmbc132v.db, UDVS_u018mmbc066v.db, UDVS_u018mmtc18v.db, UDVS_u018mmtc06v.db, UDVS_u018mmtc12v.db}
 
 Flip-Flop Types:
 
@@ -28,21 +28,21 @@ Latch Types:
 Operating Conditions:
 
 
-    Operating Condition Name : WC1D62VCOM
-    Library : UDVS_u018mmwc162v
+    Operating Condition Name : WC1D08VCOM
+    Library : UDVS_u018mmwc108v
     Process :   1.00
     Temperature : 125.00
-    Voltage :   1.62
+    Voltage :   1.08
     Interconnect Model : balanced_tree
 
 Min Operating Conditions:
 
 
-    Operating Condition Name : BC1D98VCOM
-    Library : UDVS_u018mmbc198v
+    Operating Condition Name : BC1D32VCOM
+    Library : UDVS_u018mmbc132v
     Process :   1.00
     Temperature :   0.00
-    Voltage :   1.98
+    Voltage :   1.32
     Interconnect Model : balanced_tree
 
 Wire Loading Model:
@@ -50,7 +50,7 @@ Wire Loading Model:
     Selected manually by the user.
 
 Name           :   udp8K_Conservative
-Location       :   UDVS_u018mmwc162v
+Location       :   UDVS_u018mmwc108v
 Resistance     :   1e-05
 Capacitance    :   1
 Area           :   0

@@ -1,0 +1,123 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : BoothMUL
+Version: T-2022.03-SP2
+Date   : Wed May 21 23:37:54 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: X[5] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BoothMUL           tsmc18_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  X[5] (in)                                0.01       0.01 f
+  U128/Y (INVXL)                           1.39       1.40 r
+  U129/Y (INVX1)                           1.21       2.61 f
+  U72/Y (AOI22XL)                          1.74       4.35 r
+  U130/Y (OAI221XL)                        1.09       5.45 f
+  U112/Y (INVXL)                           1.00       6.44 r
+  U135/Y (OAI221XL)                        0.38       6.82 f
+  U100/Y (OAI2BB1XL)                       0.35       7.17 r
+  mult_x_1/U26/S (CMPR42X1)                1.03       8.20 f
+  U8/CO (ADDFX1)                           0.58       8.78 f
+  U7/CO (ADDFX1)                           0.41       9.20 f
+  U6/CO (ADDFX1)                           0.41       9.61 f
+  U5/CO (ADDFX1)                           0.42      10.03 f
+  U4/CO (ADDFX1)                           0.59      10.62 f
+  U3/CO (ADDFX1)                           0.41      11.03 f
+  U2/CO (ADDFX1)                           0.41      11.45 f
+  U1/CO (ADDFX1)                           0.39      11.84 f
+  U126/Y (INVXL)                           0.75      12.58 r
+  U133/Y (BUFX1)                           0.57      13.16 r
+  P[15] (out)                              0.00      13.16 r
+  data arrival time                                  13.16
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: X[5] (input port)
+  Endpoint: P[16] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BoothMUL           tsmc18_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  X[5] (in)                                0.01       0.01 f
+  U128/Y (INVXL)                           1.39       1.40 r
+  U129/Y (INVX1)                           1.21       2.61 f
+  U72/Y (AOI22XL)                          1.74       4.35 r
+  U130/Y (OAI221XL)                        1.09       5.45 f
+  U112/Y (INVXL)                           1.00       6.44 r
+  U135/Y (OAI221XL)                        0.38       6.82 f
+  U100/Y (OAI2BB1XL)                       0.35       7.17 r
+  mult_x_1/U26/S (CMPR42X1)                1.03       8.20 f
+  U8/CO (ADDFX1)                           0.58       8.78 f
+  U7/CO (ADDFX1)                           0.41       9.20 f
+  U6/CO (ADDFX1)                           0.41       9.61 f
+  U5/CO (ADDFX1)                           0.42      10.03 f
+  U4/CO (ADDFX1)                           0.59      10.62 f
+  U3/CO (ADDFX1)                           0.41      11.03 f
+  U2/CO (ADDFX1)                           0.41      11.45 f
+  U1/CO (ADDFX1)                           0.39      11.84 f
+  U126/Y (INVXL)                           0.75      12.58 r
+  P[16] (out)                              0.00      12.58 r
+  data arrival time                                  12.58
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: X[5] (input port)
+  Endpoint: P[14] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BoothMUL           tsmc18_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  X[5] (in)                                0.01       0.01 f
+  U128/Y (INVXL)                           1.39       1.40 r
+  U129/Y (INVX1)                           1.21       2.61 f
+  U72/Y (AOI22XL)                          1.74       4.35 r
+  U130/Y (OAI221XL)                        1.09       5.45 f
+  U112/Y (INVXL)                           1.00       6.44 r
+  U135/Y (OAI221XL)                        0.38       6.82 f
+  U100/Y (OAI2BB1XL)                       0.35       7.17 r
+  mult_x_1/U26/S (CMPR42X1)                1.03       8.20 f
+  U8/CO (ADDFX1)                           0.58       8.78 f
+  U7/CO (ADDFX1)                           0.41       9.20 f
+  U6/CO (ADDFX1)                           0.41       9.61 f
+  U5/CO (ADDFX1)                           0.42      10.03 f
+  U4/CO (ADDFX1)                           0.59      10.62 f
+  U3/CO (ADDFX1)                           0.41      11.03 f
+  U2/CO (ADDFX1)                           0.41      11.45 f
+  U1/S (ADDFX1)                            0.74      12.18 r
+  P[14] (out)                              0.00      12.18 r
+  data arrival time                                  12.18
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

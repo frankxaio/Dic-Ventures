@@ -3,7 +3,7 @@
 ######################################
 # Set your desired file names
 ######################################
-top_design=CONV
+top_design=CONV #! Modify
 source_rtl_file="$(ROOT_PATH)/00_TESTBED/rtl_sim.f"	# Name of your source file
 source_gate_file="$(ROOT_PATH)/00_TESTBED/gate_sim.f"	# Name of your source file
 output_file="simv"      	# Desired output simulation file name
@@ -20,9 +20,10 @@ num_CPU_cores=4               # Maximum Number of CPU that used for simulation/s
 TIMESCALE=-timescale=1ns/1fs
 TIMESCALE1=-timescale 1ns/1fs
 DW_SIM=/usr/Synopsys/syn/T-2022.03-SP2/dw/sim_ver
-UMC018_SIM=/cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/Verilog/UDVS_u018mm.v
-UMC018_IO_SIM=/cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/Verilog/U018IOCUP.v
+U18_SIM=/cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/Verilog/UDVS_u018mm.v
+U18_IO_SIM=/cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/Verilog/U018IOCUP.v
 ICC013_SIM=/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v
+T18_SIM=/cad/CBDK/CBDK_TSMC018_Arm_f1.0/CIC/Verilog/tsmc18.v
 
 ######################################
 # Simulation Option and Command
@@ -67,10 +68,9 @@ GATE = vcs ${TIMESCALE} \
     -l ${log_file} \
     -P ${VERDI_HOME}/share/PLI/VCS/linux64/novas.tab \
        ${VERDI_HOME}/share/PLI/VCS/linux64/pli.a \
-	-v ${UMC018_SIM} \
+	-v ${U18_SIM} \
     +define+GATE \
 	+neg_tchk \
-    -neg_delay \
 
 POST = vcs ${TIMESCALE} \
     -j${num_CPU_cores} \
@@ -97,12 +97,14 @@ POST = vcs ${TIMESCALE} \
 nWave_ON = nWave -ssf *.fsdb
 
 VERDI_RTL_ON = verdi -ssf *.fsdb \
+    -f ${source_rtl_file} \
 	-sv \
 	+define+RTL	  \
 	+v2k \
 	-autoalias
 
 VERDI_GATE_ON = verdi -ssf *.fsdb \
+    -f ${source_gate_file} \
 	-sv \
     -nologo           \
 	+define+GATE	  \
@@ -146,7 +148,7 @@ INNOVUS_INIT = innovus -cpus ${num_CPU_cores} \
 # =====================================
 clean_vcs = rm -rf *.fsdb ./csrc *.log simv* *.sdf.X *.key verdi_config_file
 clean_verdi = rm -rf ./nWaveLog ./verdiLog *.conf *.rc *.log
-clean_syn = rm -rf ./Netlist/*.* ./Report/*.* *.log alib* *.svf dwsvf* *.ddc *.pvl *.syn *.mr csrc fsdb2saifLog
+clean_syn = rm -rf ./Netlist/*.* ./Report/*.* *.log alib* *.svf dwsvf* *.ddc *.pvl *.syn *.mr csrc fsdb2saifLog WORK
 clean_power = rm -rf vcd.out ./fsdb2vcdLog ./Report/*
 clean_apr = rm -rf checkDesign \
             rm -rf *.log \

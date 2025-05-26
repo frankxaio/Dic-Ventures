@@ -1,0 +1,1 @@
+pp_sum[15:0] = "/BoothMUL_tb/DUT/u_booth_pp_gen/pp0[15:0]"+ "/BoothMUL_tb/DUT/u_booth_pp_gen/pp1[15:0]"+ "/BoothMUL_tb/DUT/u_booth_pp_gen/pp2[15:0]"+ "/BoothMUL_tb/DUT/u_booth_pp_gen/pp3[15:0]"

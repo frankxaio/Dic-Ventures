@@ -1,0 +1,10 @@
+$ROOT_PATH/00_TESTBED/BoothMUL_tb.v
+$ROOT_PATH/01_RTL/BoothMUL.v
+$ROOT_PATH/01_RTL/booth_pp_gen.v
+$ROOT_PATH/01_RTL/BoothEncoder.v
+$ROOT_PATH/01_RTL/compress42.v
+$ROOT_PATH/01_RTL/FA.v
+$ROOT_PATH/01_RTL/HA.v
+$ROOT_PATH/01_RTL/pp_compressor42.v
+$ROOT_PATH/01_RTL/pp_compressor32.v
+$ROOT_PATH/01_RTL/cla_16.v

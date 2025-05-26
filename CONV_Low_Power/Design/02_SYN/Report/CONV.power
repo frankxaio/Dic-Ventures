@@ -4,7 +4,7 @@ Report : power
         -analysis_effort low
 Design : CONV
 Version: T-2022.03-SP2
-Date   : Mon May 19 12:03:50 2025
+Date   : Thu May 22 19:17:15 2025
 ****************************************
 
 
@@ -13,16 +13,16 @@ Library(s) Used:
     UDVS_u018mmwc162v (File: /cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/SynopsysDC/db/UDVS_u018mmwc162v.db)
 
 
-Operating Conditions: WC1D62VCOM   Library: UDVS_u018mmwc162v
+Operating Conditions: WC1D08VCOM   Library: UDVS_u018mmwc108v
 Wire Load Model Mode: top
 
 Design        Wire Load Model            Library
 ------------------------------------------------
 CONV                   udp8K_Conservative
-                                         UDVS_u018mmwc162v
+                                         UDVS_u018mmwc108v
 
 
-Global Operating Voltage = 1.62 
+Global Operating Voltage = 1.08 
 Power-specific unit information :
     Voltage Units = 1V
     Capacitance Units = 1.000000pf
@@ -36,12 +36,12 @@ Attributes
 i - Including register clock pin internal power
 
 
-  Cell Internal Power  =   5.9841 mW   (53%)
-  Net Switching Power  =   5.2383 mW   (47%)
+  Cell Internal Power  =   2.2499 mW   (76%)
+  Net Switching Power  = 725.3920 uW   (24%)
                          ---------
-Total Dynamic Power    =  11.2225 mW  (100%)
+Total Dynamic Power    =   2.9753 mW  (100%)
 
-Cell Leakage Power     =   5.4523 uW
+Cell Leakage Power     =   5.4017 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -50,10 +50,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.7905            0.2305           32.9092            0.3581  (   3.19%)  i
-register           0.4902            0.3637          607.7855            1.5174  (  13.51%)
+clock_network      0.5065        5.6753e-02           32.2906            0.1481  (   4.97%)  i
+register           0.1442        5.1648e-02          612.8398            0.6116  (  20.52%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      4.7034            4.6441        4.8116e+03            9.3524  (  83.30%)
+combinational      1.5993            0.6170        4.7566e+03            2.2211  (  74.51%)
 --------------------------------------------------------------------------------------------------
-Total              5.9841 mW         5.2383 mW     5.4523e+03 nW        11.2279 mW
+Total              2.2499 mW         0.7254 mW     5.4017e+03 nW         2.9807 mW
 1

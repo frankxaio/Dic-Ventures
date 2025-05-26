@@ -7,6 +7,7 @@
 # *_syn.v
 # *_syn.*
 # *.sdc
+alib-52/
 
 # --------------------------------------
 # Verilog simulation artifacts
@@ -35,6 +36,7 @@ verdi_config_file
 verdi.cmd*
 unknownSignals.*
 *.svf
+
 
 # --------------------------------------
 # Verdi session autosaves

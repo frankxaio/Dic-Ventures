@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : reference
+Design : BoothMUL
+Version: T-2022.03-SP2
+Date   : Thu May 22 00:18:46 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADDFX1             slow          69.854401      13    908.107208  r
+AND2XL             slow          13.305600       2     26.611200  
+AOI2BB1XL          slow          16.632000       1     16.632000  
+AOI2BB2XL          slow          23.284800      15    349.271994  
+AOI21XL            slow          13.305600      14    186.278402  
+AOI22XL            slow          16.632000      40    665.279999  
+AOI211XL           slow          16.632000       2     33.264000  
+AOI221XL           slow          23.284800       2     46.569599  
+AOI222XL           slow          26.611200       2     53.222401  
+INVX1              slow           6.652800       5     33.264000  
+INVXL              slow           6.652800      26    172.972802  
+MXI2XL             slow          23.284800      15    349.271994  
+NAND2BXL           slow          13.305600       1     13.305600  
+NAND2XL            slow           9.979200      26    259.459209  
+NAND3XL            slow          13.305600       1     13.305600  
+NOR2BXL            slow          13.305600       1     13.305600  
+NOR2XL             slow           9.979200      21    209.563208  
+OAI21XL            slow          13.305600      42    558.835207  
+OAI31XL            slow          19.958401       1     19.958401  
+OAI32XL            slow          23.284800       1     23.284800  
+OAI221XL           slow          23.284800       1     23.284800  
+XNOR2XL            slow          26.611200       6    159.667202  
+XOR2XL             slow          26.611200       3     79.833601  
+-----------------------------------------------------------------------------
+Total 23 references                                  4214.548827
+1

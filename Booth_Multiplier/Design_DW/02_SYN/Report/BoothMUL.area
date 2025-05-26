@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : BoothMUL
+Version: T-2022.03-SP2
+Date   : Wed May 21 23:37:54 2025
+****************************************
+
+Library(s) Used:
+
+    slow (File: /cad/CBDK/CBDK_TSMC018_Arm_f1.0/CIC/SynopsysDC/db/slow.db)
+
+Number of ports:                           33
+Number of nets:                           190
+Number of cells:                          148
+Number of combinational cells:            148
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         34
+Number of references:                      21
+
+Combinational area:               3416.212833
+Buf/Inv area:                      232.848003
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           21233.439941
+
+Total cell area:                  3416.212833
+Total area:                      24649.652774
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+BoothMUL                          3416.2128    100.0  3416.2128     0.0000  0.0000  BoothMUL
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 3416.2128     0.0000  0.0000
+
+1
