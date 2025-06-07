@@ -1,0 +1,34 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+Options:	
+Date:		Wed Jun  4 11:05:27 2025
+Host:		eda (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*4cpus*AMD Ryzen 5 5600X 6-Core Processor 512KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**ERROR: (IMPOAX-124):	OpenAccess (OA) shared library installation is older than the one that was used to build this Innovus version. For using the OA installation built and tested with this Innovus version, unset the shell variable OA_HOME. For using 'p028' or higher version of OA, reset OA_HOME to point to that installation.
+Type 'man IMPOAX-124' for more detail.
+**ERROR: (IMPOAX-332):	Failed to initialize OpenAccess (OA) database. OA related commands cannot be run in this session. Confirm that the OA shared library is installed and OA_HOME is set correctly. Typically the OA_HOME environment variable should not be set.
+Type 'man IMPOAX-332' for more detail.
+INFO: OA features are disabled in this session.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (25 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+**INFO (INTERRUPT): The current script will stop before next command.
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+Innovus terminated by user interrupt.
+
+*** Memory Usage v#1 (Current mem = 671.656M, initial mem = 268.238M) ***
+*** Message Summary: 1 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:12.5, real=0:00:24.0, mem=671.7M) ---

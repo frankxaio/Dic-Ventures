@@ -4,7 +4,7 @@ Report : power
         -analysis_effort low
 Design : CONV
 Version: T-2022.03-SP2
-Date   : Thu May 22 19:17:15 2025
+Date   : Wed Jun  4 00:43:34 2025
 ****************************************
 
 
@@ -36,12 +36,12 @@ Attributes
 i - Including register clock pin internal power
 
 
-  Cell Internal Power  =   2.2499 mW   (76%)
-  Net Switching Power  = 725.3920 uW   (24%)
+  Cell Internal Power  =   1.9853 mW   (77%)
+  Net Switching Power  = 599.9890 uW   (23%)
                          ---------
-Total Dynamic Power    =   2.9753 mW  (100%)
+Total Dynamic Power    =   2.5853 mW  (100%)
 
-Cell Leakage Power     =   5.4017 uW
+Cell Leakage Power     =   5.0004 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -50,10 +50,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.5065        5.6753e-02           32.2906            0.1481  (   4.97%)  i
-register           0.1442        5.1648e-02          612.8398            0.6116  (  20.52%)
+clock_network      0.3152        4.1549e-02           32.9322        8.9062e-02  (   3.44%)  i
+register           0.1710        5.3454e-02          591.9224            0.4927  (  19.02%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      1.5993            0.6170        4.7566e+03            2.2211  (  74.51%)
+combinational      1.4991            0.5050        4.3755e+03            2.0085  (  77.54%)
 --------------------------------------------------------------------------------------------------
-Total              2.2499 mW         0.7254 mW     5.4017e+03 nW         2.9807 mW
+Total              1.9853 mW         0.6000 mW     5.0004e+03 nW         2.5903 mW
 1

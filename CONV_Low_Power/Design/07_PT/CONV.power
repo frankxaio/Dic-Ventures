@@ -1,0 +1,61 @@
+****************************************
+Report : Time Based Power
+	-hierarchy
+Design : CONV
+Version: T-2022.03
+Date   : Mon May 26 14:46:54 2025
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+CONV                                  5.48e-03 5.30e-03 5.86e-06 1.08e-02 100.0
+  clk_gate_ST_CONV_cnt_reg (SNPS_CLOCK_GATE_HIGH_CONV_6)
+                                      2.23e-05 1.66e-05 4.37e-09 3.89e-05   0.4
+  clk_gate_iaddr_reg (SNPS_CLOCK_GATE_HIGH_CONV_7)
+                                      1.95e-05 5.84e-05 4.34e-09 7.79e-05   0.7
+  clk_gate_col_reg (SNPS_CLOCK_GATE_HIGH_CONV_0)
+                                      1.43e-05 5.40e-06 3.95e-09 1.97e-05   0.2
+  clk_gate_caddr_wr_reg (SNPS_CLOCK_GATE_HIGH_CONV_3)
+                                      1.62e-05 5.30e-06 3.96e-09 2.15e-05   0.2
+  clk_gate_maxpool_res_reg (SNPS_CLOCK_GATE_HIGH_CONV_1)
+                                      1.03e-05 6.15e-06 3.94e-09 1.65e-05   0.2
+  clk_gate_conv_mac_reg (SNPS_CLOCK_GATE_HIGH_CONV_4)
+                                      1.70e-05 1.26e-04 4.34e-09 1.43e-04   1.3
+  clk_gate_caddr_rd_reg (SNPS_CLOCK_GATE_HIGH_CONV_2)
+                                      1.09e-05 4.03e-06 3.94e-09 1.49e-05   0.1
+  clk_gate_idata_r_reg (SNPS_CLOCK_GATE_HIGH_CONV_5)
+                                      1.68e-05 6.23e-05 4.26e-09 7.91e-05   0.7
+
+
+                                      Peak     Peak            Glitch   X-tran
+Hierarchy                             Power    Time            Power    Power
+--------------------------------------------------------------------------------
+CONV                                  7.74e-02 46146.4466-46146.4467
+                                                               4.66e-05 5.24e-08
+  clk_gate_ST_CONV_cnt_reg (SNPS_CLOCK_GATE_HIGH_CONV_6)
+                                      1.07e-03 303303.0282-303303.0283
+                                                                  0.000 4.55e-10
+  clk_gate_iaddr_reg (SNPS_CLOCK_GATE_HIGH_CONV_7)
+                                      1.18e-03 303525.3100-303525.3101
+                                                                  0.000 1.40e-09
+  clk_gate_col_reg (SNPS_CLOCK_GATE_HIGH_CONV_0)
+                                      6.25e-04 96.9000-96.9001    0.000 1.11e-09
+  clk_gate_caddr_wr_reg (SNPS_CLOCK_GATE_HIGH_CONV_3)
+                                      9.96e-04 303468.0000-303468.0001
+                                                                  0.000 1.09e-09
+  clk_gate_maxpool_res_reg (SNPS_CLOCK_GATE_HIGH_CONV_1)
+                                      1.15e-03 338549.1823-338549.1824
+                                                                  0.000 1.60e-09
+  clk_gate_conv_mac_reg (SNPS_CLOCK_GATE_HIGH_CONV_4)
+                                      1.05e-03 303306.7053-303306.7054
+                                                                  0.000 2.88e-09
+  clk_gate_caddr_rd_reg (SNPS_CLOCK_GATE_HIGH_CONV_2)
+                                      7.74e-04 338558.8766-338558.8767
+                                                                  0.000 1.08e-09
+  clk_gate_idata_r_reg (SNPS_CLOCK_GATE_HIGH_CONV_5)
+                                      6.62e-04 303445.2000-303445.2001
+                                                                  0.000 1.79e-09
+1

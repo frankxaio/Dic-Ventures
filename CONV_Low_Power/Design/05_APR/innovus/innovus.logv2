@@ -1,0 +1,53 @@
+[06/04 11:05:27      0s] 
+[06/04 11:05:27      0s] Cadence Innovus(TM) Implementation System.
+[06/04 11:05:27      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/04 11:05:27      0s] 
+[06/04 11:05:27      0s] Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+[06/04 11:05:27      0s] Options:	
+[06/04 11:05:27      0s] Date:		Wed Jun  4 11:05:27 2025
+[06/04 11:05:27      0s] Host:		eda (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*4cpus*AMD Ryzen 5 5600X 6-Core Processor 512KB)
+[06/04 11:05:27      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[06/04 11:05:27      0s] 
+[06/04 11:05:27      0s] License:
+[06/04 11:05:28      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[06/04 11:05:28      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/04 11:05:28      0s] **ERROR: (IMPOAX-124):	OpenAccess (OA) shared library installation is older than the one that was used to build this Innovus version. For using the OA installation built and tested with this Innovus version, unset the shell variable OA_HOME. For using 'p028' or higher version of OA, reset OA_HOME to point to that installation.
+Type 'man IMPOAX-124' for more detail.
+[06/04 11:05:28      0s] **ERROR: (IMPOAX-332):	Failed to initialize OpenAccess (OA) database. OA related commands cannot be run in this session. Confirm that the OA shared library is installed and OA_HOME is set correctly. Typically the OA_HOME environment variable should not be set.
+Type 'man IMPOAX-332' for more detail.
+[06/04 11:05:28      0s] INFO: OA features are disabled in this session.
+[06/04 11:05:34     10s] **WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+[06/04 11:05:35     10s] @(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/04 11:05:35     10s] @(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+[06/04 11:05:35     10s] @(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/04 11:05:35     10s] @(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+[06/04 11:05:35     10s] @(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+[06/04 11:05:35     10s] @(#)CDS: CPE v20.10-p006
+[06/04 11:05:35     10s] @(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/04 11:05:35     10s] @(#)CDS: OA 22.60-p028 Tue Dec  3 14:08:48 2019
+[06/04 11:05:35     10s] @(#)CDS: SGN 19.10-d001 (24-May-2019) (64 bit executable, Qt5.9.0)
+[06/04 11:05:35     10s] @(#)CDS: RCDB 11.15.0
+[06/04 11:05:35     10s] @(#)CDS: STYLUS 20.10-p002_1 (03/12/2020 10:11 PDT)
+[06/04 11:05:35     10s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_51564_eda_host_iAcRQd.
+
+[06/04 11:05:35     10s] Change the soft stacksize limit to 0.2%RAM (25 mbytes). Set global soft_stack_size_limit to change the value.
+[06/04 11:05:35     11s] 
+[06/04 11:05:35     11s] **INFO:  MMMC transition support version v31-84 
+[06/04 11:05:35     11s] 
+[06/04 11:05:35     11s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/04 11:05:35     11s] <CMD> suppressMessage ENCEXT-2799
+[06/04 11:05:35     11s] <CMD> win
+[06/04 11:05:51     12s] **INFO (INTERRUPT): The current script will stop before next command.
+[06/04 11:05:51     12s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[06/04 11:05:51     12s] Innovus terminated by user interrupt.
+[06/04 11:05:51     12s] 
+[06/04 11:05:51     12s] *** Memory Usage v#1 (Current mem = 671.656M, initial mem = 268.238M) ***
+[06/04 11:05:51     12s] 
+[06/04 11:05:51     12s] *** Summary of all messages that are not suppressed in this session:
+[06/04 11:05:51     12s] Severity  ID               Count  Summary                                  
+[06/04 11:05:51     12s] WARNING   IMPOPT-801           1  Genus executable not found in PATH%s. In...
+[06/04 11:05:51     12s] ERROR     IMPOAX-124           1  OpenAccess (OA) shared library installat...
+[06/04 11:05:51     12s] ERROR     IMPOAX-332           1  Failed to initialize OpenAccess (OA) dat...
+[06/04 11:05:51     12s] *** Message Summary: 1 warning(s), 2 error(s)
+[06/04 11:05:51     12s] 
+[06/04 11:05:51     12s] --- Ending "Innovus" (totcpu=0:00:12.5, real=0:00:24.0, mem=671.7M) ---

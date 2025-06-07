@@ -1,6 +1,7 @@
-`define CYCLE 6.0   // Modify your clock period here
+`define CYCLE 15.0   // Modify your clock period here
 `define SDFFILE "../02_SYN/Netlist/CONV_syn.sdf"   // Modify your sdf file name
-`define End_CYCLE 100000000           // Modify cycle times once your design need more cycle times!
+// `define SDFFILE "../06_POST/CONV_pr.sdf"   // Modify your sdf file name
+`define END_CYCLE 10000000           // Modify cycle times once your design need more cycle times!
 
 `define PAT "../00_TESTBED/dat_univ/cnn_sti.dat"    // Modify your "dat" directory path
 `define L0_EXP0 "../00_TESTBED/dat_univ/cnn_layer0_exp0.dat"
@@ -185,7 +186,7 @@ module testfixture;
 
   //-------------------------------------------------------------------------------------------------------------------
   initial begin
-    #`End_CYCLE;
+    #`END_CYCLE;
     $display("-----------------------------------------------------\n");
     $display("Error!!! The simulation can't be terminated under normal operation!\n");
     $display("-------------------------FAIL------------------------\n");

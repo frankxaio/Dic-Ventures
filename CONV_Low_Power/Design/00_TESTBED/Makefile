@@ -3,9 +3,10 @@
 ######################################
 # Set your desired file names
 ######################################
-top_design=CONV #! Modify
+top_design=CONV
 source_rtl_file="$(ROOT_PATH)/00_TESTBED/rtl_sim.f"	# Name of your source file
 source_gate_file="$(ROOT_PATH)/00_TESTBED/gate_sim.f"	# Name of your source file
+source_post_file="$(ROOT_PATH)/00_TESTBED/post_sim.f"
 output_file="simv"      	# Desired output simulation file name
 log_file="vcs.log"      	# Desired log file name
 syn_tcl="syn.tcl"       	# Name of your synthesis tcl file
@@ -18,7 +19,6 @@ pt_log="pt.log"       	# Name of your synthesis log file
 ######################################
 num_CPU_cores=4               # Maximum Number of CPU that used for simulation/synthesis
 TIMESCALE=-timescale=1ns/1fs
-TIMESCALE1=-timescale 1ns/1fs
 DW_SIM=/usr/Synopsys/syn/T-2022.03-SP2/dw/sim_ver
 U18_SIM=/cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/Verilog/UDVS_u018mm.v
 U18_IO_SIM=/cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/Verilog/U018IOCUP.v
@@ -71,8 +71,9 @@ GATE = vcs ${TIMESCALE} \
 	-v ${U18_SIM} \
     +define+GATE \
 	+neg_tchk \
+    -negdelay \
 
-POST = vcs ${TIMESCALE} \
+POST = vcs -q ${TIMESCALE} \
     -j${num_CPU_cores} \
     -sverilog \
     +v2k \
@@ -80,13 +81,13 @@ POST = vcs ${TIMESCALE} \
     -Mupdate \
     -R \
     -debug_access+all \
-    -f ${source_file} \
+    -f ${source_post_file} \
     -o ${output_file} \
     -l ${log_file} \
-    -P ${VERDI}/share/PLI/VCS/linux64/novas.tab \
-       ${VERDI}/share/PLI/VCS/linux64/pli.a \
-    -v ${UMC018_SIM} \
-	-v ${UMC018_IO_SIM} \
+    -P ${VERDI_HOME}/share/PLI/VCS/linux64/novas.tab \
+       ${VERDI_HOME}/share/PLI/VCS/linux64/pli.a \
+    -v ${U18_sim} \
+	-v ${U18_IO_SIM} \
     +define+POST \
     +neg_tchk
 
@@ -125,7 +126,12 @@ DC_shell_gui = dcnxt_shell -f ${syn_tcl} \
 
 Read_DC_shell_gui = dcnxt_shell -x 'read_sverilog ${top_design}.v' -gui
 Read_DDC_shell_gui = dcnxt_shell -x "read_ddc ${top_design}_SYN.ddc" -gui
-SAIF = fsdb2saif ${top_design}.fsdb  -o ${top_design}.saif
+
+# =====================================
+# ========== File conversion ==========
+# =====================================
+SAIF = fsdb2saif ${top_design}.fsdb -o ${top_design}.saif
+VCD = fsdb2vcd ${top_design}.fsdb -o ${top_design}.vcd
 
 # =====================================
 # ========== Prime Time		 ==========
@@ -146,7 +152,7 @@ INNOVUS_INIT = innovus -cpus ${num_CPU_cores} \
 # =====================================
 # ============= clean =================
 # =====================================
-clean_vcs = rm -rf *.fsdb ./csrc *.log simv* *.sdf.X *.key verdi_config_file
+clean_vcs = rm -rf *.fsdb ./csrc *.log simv* *.sdf.X *.key verdi_config_file *.saif
 clean_verdi = rm -rf ./nWaveLog ./verdiLog *.conf *.rc *.log
 clean_syn = rm -rf ./Netlist/*.* ./Report/*.* *.log alib* *.svf dwsvf* *.ddc *.pvl *.syn *.mr csrc fsdb2saifLog WORK
 clean_power = rm -rf vcd.out ./fsdb2vcdLog ./Report/*
@@ -187,6 +193,9 @@ read_ddc:
 
 saif:
 	${SAIF}
+
+vcd:
+	${VCD}
 
 pt:
 	${PT_shell}

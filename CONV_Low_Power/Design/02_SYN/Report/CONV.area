@@ -3,29 +3,29 @@
 Report : area
 Design : CONV
 Version: T-2022.03-SP2
-Date   : Thu May 22 19:17:15 2025
+Date   : Wed Jun  4 00:43:34 2025
 ****************************************
 
 Library(s) Used:
 
     UDVS_u018mmwc162v (File: /cad/CBDK/CBDK_UMC018_ITRI_v0.8/CIC/SynopsysDC/db/UDVS_u018mmwc162v.db)
 
-Number of ports:                          129
-Number of nets:                          2888
-Number of cells:                         2619
-Number of combinational cells:           2456
+Number of ports:                          332
+Number of nets:                          2893
+Number of cells:                         2405
+Number of combinational cells:           2239
 Number of sequential cells:               155
 Number of macros/black boxes:               0
-Number of buf/inv:                        245
-Number of references:                      63
+Number of buf/inv:                        115
+Number of references:                      49
 
-Combinational area:              46523.187606
-Buf/Inv area:                     2867.558422
-Noncombinational area:            8958.924759
+Combinational area:              43239.168906
+Buf/Inv area:                     1026.099212
+Noncombinational area:            8743.167934
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                 55482.112365
+Total cell area:                 51982.336840
 Total area:                 undefined
 
 Hierarchical area distribution
@@ -36,7 +36,9 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
                                   Total       Total    national    national   boxes   Design
 --------------------------------  ----------  -------  ----------  ---------  ------  ---------------------------
-CONV                              55482.1124    100.0  46402.7652  8637.7984  0.0000  CONV
+CONV                              51982.3368    100.0  10436.6081  8422.0415  0.0000  CONV
+DP_OP_110_122_9292                31006.2600     59.6  31006.2600     0.0000  0.0000  CONV_DP_OP_110_122_9292_0
+add_x_26                            702.4640      1.4    702.4640     0.0000  0.0000  CONV_DW01_inc_0
 clk_gate_ST_CONV_cnt_reg             55.1936      0.1     15.0528    40.1408  0.0000  SNPS_CLOCK_GATE_HIGH_CONV_6
 clk_gate_caddr_rd_reg                55.1936      0.1     15.0528    40.1408  0.0000  SNPS_CLOCK_GATE_HIGH_CONV_2
 clk_gate_caddr_wr_reg                55.1936      0.1     15.0528    40.1408  0.0000  SNPS_CLOCK_GATE_HIGH_CONV_3
@@ -45,7 +47,8 @@ clk_gate_conv_mac_reg                55.1936      0.1     15.0528    40.1408  0.
 clk_gate_iaddr_reg                   55.1936      0.1     15.0528    40.1408  0.0000  SNPS_CLOCK_GATE_HIGH_CONV_7
 clk_gate_idata_r_reg                 55.1936      0.1     15.0528    40.1408  0.0000  SNPS_CLOCK_GATE_HIGH_CONV_5
 clk_gate_maxpool_res_reg             55.1936      0.1     15.0528    40.1408  0.0000  SNPS_CLOCK_GATE_HIGH_CONV_1
+gt_x_40                             973.4144      1.9    973.4144     0.0000  0.0000  CONV_DW_cmp_0
 --------------------------------  ----------  -------  ----------  ---------  ------  ---------------------------
-Total                                                  46523.1876  8958.9248  0.0000
+Total                                                  43239.1689  8743.1679  0.0000
 
 1

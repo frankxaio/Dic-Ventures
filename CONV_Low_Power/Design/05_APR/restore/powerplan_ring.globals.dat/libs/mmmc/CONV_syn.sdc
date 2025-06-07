@@ -1,0 +1,1 @@
+/home/host/Documents/DIC-Ventures/CONV_Low_Power/Design/05_APR/sdc/CONV_syn.sdc

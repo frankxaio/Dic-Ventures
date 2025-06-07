@@ -1,0 +1,936 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+Options:	
+Date:		Wed Jun  4 11:06:36 2025
+Host:		eda (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*4cpus*AMD Ryzen 5 5600X 6-Core Processor 512KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (25 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> setDesignMode -process 180
+##  Process: 180           (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 180nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> set restore_db_stop_at_design_in_memory 0
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+RC_best RC_worst
+Loading view definition file from /home/host/Documents/DIC-Ventures/CONV_Low_Power/Design/05_APR/restore/place_init.globals.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.00min, real=0.00min, mem=9.0M, fe_cpu=0.25min, fe_real=0.70min, fe_mem=712.1M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNR2D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNR2D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'TIEL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'TIEL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'TIEH' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'TIEH' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /home/host/Documents/DIC-Ventures/CONV_Low_Power/Design/05_APR/restore/place_init.globals.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name reg2cgate is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+**WARN: (IMPSP-105):	'setPlaceMode -maxRouteLayer' will become obsolete from next release. Use 'setRouteMode -earlyGlobalMaxRouteLayer N' to set maximum routing layer.**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading place ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+'set_default_switching_activity' finished successfully.
+DC_min DC_max
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.10-p004_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> update_constraint_mode -name CM_ideal_cts -sdc_files ../sdc/CONV_syn_cts.sdc
+Reading timing constraints file '/tmp/innovus_temp_52395_eda_host_uddHbG/.mmmcEBAJ7h/modes/CM_ideal/CM_ideal.sdc' ...
+Current (total cpu=0:00:16.5, real=0:00:51.0, peak res=879.9M, current mem=851.7M)
+CONV
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=866.8M, current mem=866.8M)
+Current (total cpu=0:00:16.5, real=0:00:51.0, peak res=879.9M, current mem=866.8M)
+Reading timing constraints file '../sdc/CONV_syn_cts.sdc' ...
+Current (total cpu=0:00:16.6, real=0:00:51.0, peak res=879.9M, current mem=866.8M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../sdc/CONV_syn_cts.sdc, Line 8).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../sdc/CONV_syn_cts.sdc, Line 203).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../sdc/CONV_syn_cts.sdc, Line 204).
+
+INFO (CTE): Reading of timing constraints file ../sdc/CONV_syn_cts.sdc completed, with 3 WARNING
+WARNING (CTE-25): Line: 9 of File ../sdc/CONV_syn_cts.sdc : Skipped unsupported command: set_max_area
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=867.1M, current mem=867.1M)
+Current (total cpu=0:00:16.6, real=0:00:51.0, peak res=879.9M, current mem=867.1M)
+Reading latency file '/tmp/innovus_temp_52395_eda_host_uddHbG/.mmmcEBAJ7h/views/AV_func_max/latency.sdc' ...
+Reading latency file '/tmp/innovus_temp_52395_eda_host_uddHbG/.mmmcEBAJ7h/views/AV_func_min/latency.sdc' ...
+Current (total cpu=0:00:16.6, real=0:00:51.0, peak res=879.9M, current mem=867.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=868.5M, current mem=868.5M)
+Current (total cpu=0:00:16.6, real=0:00:51.0, peak res=879.9M, current mem=868.5M)
+<CMD> set_ccopt_property update_io_latency false
+<CMD> create_ccopt_clock_tree_spec -file ../ccopt/ccopt.spec
+Creating clock tree spec for modes (timing configs): CM_ideal CM_ideal_cts
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Wrote: ../ccopt/ccopt.spec
+<CMD> get_ccopt_clock_trees
+<CMD_INTERNAL> ccopt_check_and_flatten_ilms_no_restore
+<CMD> set_ccopt_property cts_is_sdc_clock_root -pin clk true
+<CMD> create_ccopt_clock_tree -name clk -source clk -no_skew_group
+Extracting original clock gating for clk...
+  clock_tree clk contains 155 sinks and 8 clock gates.
+  Extraction for clk complete.
+Extracting original clock gating for clk done.
+<CMD> set_ccopt_property target_max_trans_sdc -delay_corner DC_max -early -clock_tree clk 0.500
+<CMD> set_ccopt_property target_max_trans_sdc -delay_corner DC_max -late -clock_tree clk 0.500
+<CMD> set_ccopt_property source_max_capacitance -clock_tree clk 0.150
+<CMD> set_ccopt_property source_latency -clock_tree clk 0.000
+<CMD> set_ccopt_property clock_period -pin clk 15
+<CMD> create_ccopt_skew_group -name clk/CM_ideal -sources clk -auto_sinks
+The skew group clk/CM_ideal was created. It contains 155 sinks and 1 sources.
+<CMD> set_ccopt_property include_source_latency -skew_group clk/CM_ideal true
+<CMD> set_ccopt_property target_insertion_delay -skew_group clk/CM_ideal 1.000
+<CMD> set_ccopt_property extracted_from_clock_name -skew_group clk/CM_ideal clk
+<CMD> set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/CM_ideal CM_ideal
+<CMD> set_ccopt_property extracted_from_delay_corners -skew_group clk/CM_ideal {DC_max DC_min}
+<CMD> create_ccopt_skew_group -name clk/CM_ideal_cts -sources clk -auto_sinks
+The skew group clk/CM_ideal_cts was created. It contains 155 sinks and 1 sources.
+<CMD> set_ccopt_property include_source_latency -skew_group clk/CM_ideal_cts true
+<CMD> set_ccopt_property extracted_from_clock_name -skew_group clk/CM_ideal_cts clk
+<CMD> set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/CM_ideal_cts CM_ideal_cts
+<CMD> set_ccopt_property extracted_from_delay_corners -skew_group clk/CM_ideal_cts {DC_max DC_min}
+<CMD> check_ccopt_clock_tree_convergence
+Checking clock tree convergence...
+Checking clock tree convergence done.
+<CMD> get_ccopt_property auto_design_state_for_ilms
+<CMD> ccopt_design -cts
+#% Begin ccopt_design (date=06/04 11:07:52, mem=830.3M)
+Turning off fast DC mode./nRuntime...
+**INFO: User's settings:
+setNanoRouteMode -droutePostRouteSpreadWire         1
+setNanoRouteMode -extractThirdPartyCompatible       false
+setNanoRouteMode -grouteExpTdStdDelay               58.4
+setNanoRouteMode -timingEngine                      {}
+setDesignMode -process                              180
+setExtractRCMode -coupling_c_th                     3
+setExtractRCMode -engine                            preRoute
+setExtractRCMode -relative_c_th                     0.03
+setExtractRCMode -total_c_th                        5
+setDelayCalMode -enable_high_fanout                 true
+setDelayCalMode -eng_copyNetPropToNewNet            true
+setDelayCalMode -engine                             aae
+setDelayCalMode -ignoreNetLoad                      false
+setPlaceMode -maxRouteLayer                         6
+setPlaceMode -place_detail_check_route              false
+setPlaceMode -place_detail_preserve_routing         true
+setPlaceMode -place_detail_remove_affected_routing  false
+setPlaceMode -place_detail_swap_eeq_cells           false
+setPlaceMode -place_global_clock_gate_aware         true
+setPlaceMode -place_global_cong_effort              auto
+setPlaceMode -place_global_ignore_scan              true
+setPlaceMode -place_global_ignore_spare             true
+setPlaceMode -place_global_module_aware_spare       false
+setPlaceMode -place_global_place_io_pins            true
+setPlaceMode -place_global_reorder_scan             false
+setPlaceMode -powerDriven                           false
+setPlaceMode -timingDriven                          true
+setRouteMode -earlyGlobalHonorMsvRouteConstraint    false
+setRouteMode -earlyGlobalRoutePartitionPinGuide     true
+
+(ccopt_design): CTS Engine: auto. Used Spec: pre-existing CCOPT spec.
+Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+Set place::cacheFPlanSiteMark to 1
+CCOpt::Phase::Initialization...
+Check Prerequisites...
+Leaving CCOpt scope - CheckPlace...
+Begin checking placement ... (start mem=1002.2M, init mem=1034.4M)
+*info: Placed = 2073          
+*info: Unplaced = 0           
+Placement Density:58.72%(46408/79027)
+Placement Density (including fixed std cells):58.72%(46408/79027)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1034.4M)
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:00.0 real=0:00:00.0)
+**WARN: (IMPCCOPT-2015):	Innovus will not update I/O latencies for the following reason(s):
+ * CCOpt property update_io_latency is false
+
+Found 0 ideal nets, 0 pins with transition annotations, 0 instances with delay annotations, 0 nets with delay annotations, refer to logv for details.
+
+Check Prerequisites done. (took cpu=0:00:00.0 real=0:00:00.0)
+CCOpt::Phase::Initialization done. (took cpu=0:00:00.0 real=0:00:00.0)
+Executing ccopt post-processing.
+Synthesizing clock trees with CCOpt...
+CCOpt::Phase::PreparingToBalance...
+Leaving CCOpt scope - Initializing power interface...
+Leaving CCOpt scope - Initializing power interface done. (took cpu=0:00:00.0 real=0:00:00.0)
+Found 0 advancing pin insertion delay (0.000% of 155 clock tree sinks)
+Found 0 delaying pin insertion delay (0.000% of 155 clock tree sinks)
+Leaving CCOpt scope - optDesignGlobalRouteStep...
+[NR-eGR] Started Early Global Route kernel ( Curr Mem: 1042.46 MB )
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] ME1 has no routable track
+[NR-eGR] ME2 has single uniform track structure
+[NR-eGR] ME3 has single uniform track structure
+[NR-eGR] ME4 has single uniform track structure
+[NR-eGR] ME5 has single uniform track structure
+[NR-eGR] ME6 has single uniform track structure
+[NR-eGR] Started Read PG Shapes ( Curr Mem: 1042.46 MB )
+[NR-eGR] Read 9034 PG shapes
+[NR-eGR] Finished Read PG Shapes ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1042.46 MB )
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 9034
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=2341  numIgnoredNets=0
+[NR-eGR] There are 9 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 2341 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 2341 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 7.22% H + 1.48% V. EstWL: 6.806912e+04um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon           OverCon            
+[NR-eGR]                         #Gcell            #Gcell     %Gcell
+[NR-eGR]       Layer                (1)               (4)    OverCon 
+[NR-eGR] ---------------------------------------------------------------
+[NR-eGR]     ME1  (1)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]     ME2  (2)        49( 0.59%)         3( 0.04%)   ( 0.63%) 
+[NR-eGR]     ME3  (3)       325( 3.95%)        25( 0.30%)   ( 4.26%) 
+[NR-eGR]     ME4  (4)        20( 0.24%)         0( 0.00%)   ( 0.24%) 
+[NR-eGR]     ME5  (5)        92( 1.12%)         1( 0.01%)   ( 1.13%) 
+[NR-eGR]     ME6  (6)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ---------------------------------------------------------------
+[NR-eGR] Total              486( 1.25%)        29( 0.07%)   ( 1.33%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 2.78% H + 0.23% V
+[NR-eGR] Overflow after Early Global Route 3.40% H + 0.29% V
+[NR-eGR] Started Export DB wires ( Curr Mem: 1043.46 MB )
+[NR-eGR] Started Export all nets ( Curr Mem: 1043.46 MB )
+[NR-eGR] Finished Export all nets ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1043.46 MB )
+[NR-eGR] Started Set wire vias ( Curr Mem: 1043.46 MB )
+[NR-eGR] Finished Set wire vias ( CPU: 0.01 sec, Real: 0.00 sec, Curr Mem: 1043.46 MB )
+[NR-eGR] Finished Export DB wires ( CPU: 0.01 sec, Real: 0.01 sec, Curr Mem: 1043.46 MB )
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR]    ME1  (1F) length: 0.000000e+00um, number of vias: 6740
+[NR-eGR]    ME2  (2V) length: 3.227496e+04um, number of vias: 10154
+[NR-eGR]    ME3  (3H) length: 2.460758e+04um, number of vias: 1048
+[NR-eGR]    ME4  (4V) length: 5.038350e+03um, number of vias: 811
+[NR-eGR]    ME5  (5H) length: 1.122488e+04um, number of vias: 10
+[NR-eGR]    ME6  (6V) length: 3.920000e+00um, number of vias: 0
+[NR-eGR] Total length: 7.314969e+04um, number of vias: 18763
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 2.615910e+03um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Finished Early Global Route kernel ( CPU: 0.04 sec, Real: 0.04 sec, Curr Mem: 1043.46 MB )
+Leaving CCOpt scope - optDesignGlobalRouteStep done. (took cpu=0:00:00.0 real=0:00:00.0)
+Rebuilding timing graph...
+Rebuilding timing graph done.
+Legalization setup...
+Using cell based legalization.
+**WARN: (IMPSP-105):	'setPlaceMode -maxRouteLayer' will become obsolete from next release. Use 'setRouteMode -earlyGlobalMaxRouteLayer N' to set maximum routing layer.Type 'man IMPSP-105' for more detail.
+Estimated cell power/ground rail width = 0.560 um
+Legalization setup done. (took cpu=0:00:00.0 real=0:00:00.0)
+Validating CTS configuration...
+Checking module port directions...
+Checking module port directions done. (took cpu=0:00:00.0 real=0:00:00.0)
+Non-default CCOpt properties:
+route_type is set for at least one object
+source_max_capacitance is set for at least one object
+target_insertion_delay is set for at least one object
+target_max_trans_sdc is set for at least one object
+update_io_latency: 0 (default: true)
+Route type trimming info:
+  No route type modifications were made.
+**WARN: (IMPCCOPT-1184):	The library has no usable balanced inverters for power domain auto-default, while balancing clock_tree clk. If this is not intended behavior, you can specify a list of lib_cells to use with the inverter_cells property.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Clock tree balancer configuration for clock_tree clk:
+Non-default CCOpt properties:
+  route_type (leaf): default_route_type_leaf (default: default)
+  route_type (trunk): default_route_type_nonleaf (default: default)
+  route_type (top): default_route_type_nonleaf (default: default)
+  source_max_capacitance: 150 (default: auto)
+For power domain auto-default:
+  Buffers:     DEL1 
+  Inverters:   
+  Clock gates: ICGD1 
+  Unblocked area available for placement of any clock cells in power_domain auto-default: 79027.200um^2
+Top Routing info:
+  Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: ME4/ME3; 
+  Unshielded; Mask Constraint: 0; Source: route_type.
+Trunk Routing info:
+  Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: ME4/ME3; 
+  Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: route_type.
+Leaf Routing info:
+  Route-type name: default_route_type_leaf; Top/bottom preferred layer name: ME4/ME3; 
+  Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: route_type.
+For timing_corner DC_max:setup, late and power domain auto-default:
+  Slew time target (leaf):    0.500ns (Too low; min: 1.150ns)
+  Slew time target (trunk):   0.500ns (Too low; min: 1.150ns)
+  Slew time target (top):     0.500ns (Note: no nets are considered top nets in this clock tree)
+  Buffer unit delay: 0.414ns
+  Buffer max distance: 180.496um
+Fastest wire driving cells and distances:
+  Buffer    : {lib_cell:DEL1, fastest_considered_half_corner=DC_max:setup.late, optimalDrivingDistance=180.496um, saturatedSlew=0.448ns, speed=420.541um per ns, cellArea=69.497um^2 per 1000um}
+  Clock gate: {lib_cell:ICGD1, fastest_considered_half_corner=DC_max:setup.late, optimalDrivingDistance=286.610um, saturatedSlew=0.441ns, speed=450.079um per ns, cellArea=201.327um^2 per 1000um}
+
+**ERROR: (IMPCCOPT-1013):	The target_max_trans is too low for at least one clock tree, net type and timing corner. Search the log for the string 'Too low;' to find the minimum acceptable targets for each combination. CTS will now terminate.
+Type 'man IMPCCOPT-1013' for more detail.
+
+Logic Sizing Table:
+
+----------------------------------------------------------
+Cell    Instance count    Source    Eligible library cells
+----------------------------------------------------------
+  (empty table)
+----------------------------------------------------------
+
+
+Clock tree timing engine global stage delay update for DC_max:setup.late...
+Clock tree timing engine global stage delay update for DC_max:setup.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree balancer configuration for skew_group clk/CM_ideal:
+  Sources:                     pin clk
+  Total number of sinks:       155
+  Delay constrained sinks:     147
+  Non-leaf sinks:              0
+  Ignore pins:                 0
+ Timing corner DC_max:setup.late:
+  Skew target:                 0.000ns
+  Insertion delay target:      1.000ns
+Clock tree balancer configuration for skew_group clk/CM_ideal_cts:
+  Sources:                     pin clk
+  Total number of sinks:       155
+  Delay constrained sinks:     147
+  Non-leaf sinks:              0
+  Ignore pins:                 0
+ Timing corner DC_max:setup.late:
+  Skew target:                 0.000ns
+**WARN: (IMPCCOPT-1361):	Routing configuration for top nets in clock tree clk: preferred layers ME3-ME4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+**WARN: (IMPCCOPT-1361):	Routing configuration for trunk nets in clock tree clk: preferred layers ME3-ME4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+**WARN: (IMPCCOPT-1361):	Routing configuration for leaf nets in clock tree clk: preferred layers ME3-ME4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+Primary reporting skew groups are:
+skew_group clk/CM_ideal with 155 clock sinks
+
+Clock DAG stats initial state:
+  cell counts      : b=0, i=0, icg=0, nicg=8, l=0, total=8
+  cell areas       : b=0.000um^2, i=0.000um^2, icg=0.000um^2, nicg=120.422um^2, l=0.000um^2, total=120.422um^2
+  hp wire lengths  : top=0.000um, trunk=0.000um, leaf=1186.870um, total=1186.870um
+Clock DAG library cell distribution initial state {count}:
+  NICGs: AN2D1: 8 
+
+Distribution of half-perimeter wire length by ICG depth:
+
+-----------------------------------------------------------------------------
+Min ICG    Max ICG    Count    HPWL
+Depth      Depth               (um)
+-----------------------------------------------------------------------------
+   0          0         8      [min=30, max=483, avg=148, sd=145, total=1187]
+   0          1         1      [min=362, max=362, avg=362, sd=0, total=362]
+-----------------------------------------------------------------------------
+
+**WARN: (IMPCCOPT-2314):	CCOpt found 1 clock tree nets marked as ideal or dont_touch. These will not be buffered.
+
+Ideal and dont_touch net fanout counts:
+
+-----------------------------------------------------------
+Min fanout    Max fanout    Number of ideal/dont_touch nets
+-----------------------------------------------------------
+      1            10                      0
+     11           100                      1
+    101          1000                      0
+   1001         10000                      0
+  10001           +                        0
+-----------------------------------------------------------
+
+Top ideal and dont_touch nets by fanout:
+
+---------------------
+Net name    Fanout ()
+---------------------
+clk            27
+---------------------
+
+
+No dont_touch hnets found in the clock tree
+Validating CTS configuration done. (took cpu=0:00:00.1 real=0:00:00.1)
+
+CCOpt configuration status: cannot run ccopt_design.
+Check the log for details of problem(s) found:
+
+---------------------------------------------------
+Design configuration problems
+---------------------------------------------------
+One or more clock trees have configuration problems
+---------------------------------------------------
+
+Clock tree configuration problems:
+
+------------------------------------------------------
+Clock tree    Problem
+------------------------------------------------------
+clk           The maximum transition target is too low
+------------------------------------------------------
+
+
+CCOpt::Phase::PreparingToBalance done. (took cpu=0:00:00.2 real=0:00:00.2)
+Runtime done. (took cpu=0:00:00.3 real=0:00:00.3)
+Runtime Summary
+===============
+Clock Runtime:  (74%) Core CTS           0.19 (Init 0.19, Construction 0.00, Implementation 0.00, eGRPC 0.00, PostConditioning 0.00, Other 0.00)
+Clock Runtime:   (0%) CTS services       0.00 (RefinePlace 0.00, EarlyGlobalClock 0.00, NanoRoute 0.00, ExtractRC 0.00, TimingAnalysis 0.00)
+Clock Runtime:  (25%) Other CTS          0.07 (Init 0.07, CongRepair/EGR-DP 0.00, TimingUpdate 0.00, Other 0.00)
+Clock Runtime: (100%) Total              0.26
+
+**WARN: (IMPSP-105):	'setPlaceMode -maxRouteLayer' will become obsolete from next release. Use 'setRouteMode -earlyGlobalMaxRouteLayer N' to set maximum routing layer.Type 'man IMPSP-105' for more detail.
+**ERROR: (IMPCCOPT-2196):	Cannot run ccopt_design because the command prerequisites were not met. Review the previous error messages for more details about the failure.
+Set place::cacheFPlanSiteMark to 0
+3
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-105            4  'setPlaceMode -maxRouteLayer' will becom...
+WARNING   IMPCCOPT-2314        1  CCOpt found %u clock tree nets marked as...
+WARNING   IMPCCOPT-1361        3  Routing configuration for %s nets in clo...
+ERROR     IMPCCOPT-2196        1  Cannot run ccopt_design because the comm...
+WARNING   IMPCCOPT-1184        1  The library has no usable balanced %ss f...
+WARNING   IMPCCOPT-2015        1  %s will not update I/O latencies for the...
+ERROR     IMPCCOPT-1013        1  The target_max_trans is too low for at l...
+*** Message Summary: 10 warning(s), 2 error(s)
+
+#% End ccopt_design (date=06/04 11:07:52, total cpu=0:00:00.3, real=0:00:00.0, peak res=891.2M, current mem=891.2M)
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (IMPIMEX-4017):	freeDesign cannot reset some internal state of applications or global settings, so it is not reliable enough to use in a real flow.
+Reset to color id 0 for clk_gate_col_reg (SNPS_CLOCK_GATE_HIGH_CONV_0) and all their descendants.
+Reset to color id 0 for clk_gate_iaddr_reg (SNPS_CLOCK_GATE_HIGH_CONV_7) and all their descendants.
+Reset to color id 0 for clk_gate_ST_CONV_cnt_reg (SNPS_CLOCK_GATE_HIGH_CONV_6) and all their descendants.
+Reset to color id 0 for clk_gate_idata_r_reg (SNPS_CLOCK_GATE_HIGH_CONV_5) and all their descendants.
+Reset to color id 0 for clk_gate_conv_mac_reg (SNPS_CLOCK_GATE_HIGH_CONV_4) and all their descendants.
+Reset to color id 0 for clk_gate_caddr_wr_reg (SNPS_CLOCK_GATE_HIGH_CONV_3) and all their descendants.
+Reset to color id 0 for clk_gate_caddr_rd_reg (SNPS_CLOCK_GATE_HIGH_CONV_2) and all their descendants.
+Reset to color id 0 for clk_gate_maxpool_res_reg (SNPS_CLOCK_GATE_HIGH_CONV_1) and all their descendants.
+Reset to color id 0 for gt_x_40 (CONV_DW_cmp_0) and all their descendants.
+Reset to color id 0 for add_x_26 (CONV_DW01_inc_0) and all their descendants.
+Reset to color id 0 for DP_OP_110_122_9292 (CONV_DP_OP_110_122_9292_1) and all their descendants.
+Free PSO.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+RC_best RC_worst
+Loading view definition file from /home/host/Documents/DIC-Ventures/CONV_Low_Power/Design/05_APR/restore/place_init.globals.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.00min, real=0.02min, mem=8.0M, fe_cpu=0.38min, fe_real=2.32min, fe_mem=897.1M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNR2D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNR2D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'TIEL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'TIEL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'TIEH' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'TIEH' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /home/host/Documents/DIC-Ventures/CONV_Low_Power/Design/05_APR/restore/place_init.globals.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name reg2cgate is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+**WARN: (IMPSP-105):	'setPlaceMode -maxRouteLayer' will become obsolete from next release. Use 'setRouteMode -earlyGlobalMaxRouteLayer N' to set maximum routing layer.**WARN: analysis view AV_func_max not found, use default_view_setup
+**WARN: analysis view AV_func_min not found, use default_view_setup
+**WARN: analysis view AV_scan_max not found, use default_view_setup
+**WARN: analysis view AV_scan_min not found, use default_view_setup
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading place ...
+'set_default_switching_activity' finished successfully.
+DC_min DC_max
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.10-p004_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> update_constraint_mode -name CM_ideal_cts -sdc_files ../sdc/CONV_syn_cts.sdc
+Reading timing constraints file '/tmp/innovus_temp_52395_eda_host_uddHbG/.mmmcMKIFvP/modes/CM_ideal/CM_ideal.sdc' ...
+Current (total cpu=0:00:24.3, real=0:02:27, peak res=930.2M, current mem=883.1M)
+CONV
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=896.9M, current mem=896.9M)
+Current (total cpu=0:00:24.3, real=0:02:27, peak res=930.2M, current mem=896.9M)
+Reading timing constraints file '../sdc/CONV_syn_cts.sdc' ...
+Current (total cpu=0:00:24.3, real=0:02:27, peak res=930.2M, current mem=896.9M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../sdc/CONV_syn_cts.sdc, Line 8).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../sdc/CONV_syn_cts.sdc, Line 203).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ../sdc/CONV_syn_cts.sdc, Line 204).
+
+INFO (CTE): Reading of timing constraints file ../sdc/CONV_syn_cts.sdc completed, with 3 WARNING
+WARNING (CTE-25): Line: 9 of File ../sdc/CONV_syn_cts.sdc : Skipped unsupported command: set_max_area
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=897.2M, current mem=897.2M)
+Current (total cpu=0:00:24.4, real=0:02:27, peak res=930.2M, current mem=897.2M)
+Reading latency file '/tmp/innovus_temp_52395_eda_host_uddHbG/.mmmcMKIFvP/views/AV_func_max/latency.sdc' ...
+Reading latency file '/tmp/innovus_temp_52395_eda_host_uddHbG/.mmmcMKIFvP/views/AV_func_min/latency.sdc' ...
+Current (total cpu=0:00:24.4, real=0:02:27, peak res=930.2M, current mem=897.2M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=898.3M, current mem=898.3M)
+Current (total cpu=0:00:24.4, real=0:02:27, peak res=930.2M, current mem=898.3M)
+<CMD> set_ccopt_property update_io_latency false
+<CMD> create_ccopt_clock_tree_spec -file ../ccopt/ccopt.spec
+Creating clock tree spec for modes (timing configs): CM_ideal CM_ideal_cts
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Wrote: ../ccopt/ccopt.spec
+<CMD> get_ccopt_clock_trees
+<CMD_INTERNAL> ccopt_check_and_flatten_ilms_no_restore
+<CMD> set_ccopt_property cts_is_sdc_clock_root -pin clk true
+<CMD> create_ccopt_clock_tree -name clk -source clk -no_skew_group
+Extracting original clock gating for clk...
+  clock_tree clk contains 155 sinks and 8 clock gates.
+  Extraction for clk complete.
+Extracting original clock gating for clk done.
+<CMD> set_ccopt_property target_max_trans_sdc -delay_corner DC_max -early -clock_tree clk 0.100
+<CMD> set_ccopt_property target_max_trans_sdc -delay_corner DC_max -late -clock_tree clk 0.100
+<CMD> set_ccopt_property source_max_capacitance -clock_tree clk 0.150
+<CMD> set_ccopt_property source_latency -clock_tree clk 0.000
+<CMD> set_ccopt_property clock_period -pin clk 15
+<CMD> create_ccopt_skew_group -name clk/CM_ideal -sources clk -auto_sinks
+The skew group clk/CM_ideal was created. It contains 155 sinks and 1 sources.
+<CMD> set_ccopt_property include_source_latency -skew_group clk/CM_ideal true
+<CMD> set_ccopt_property target_insertion_delay -skew_group clk/CM_ideal 1.000
+<CMD> set_ccopt_property extracted_from_clock_name -skew_group clk/CM_ideal clk
+<CMD> set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/CM_ideal CM_ideal
+<CMD> set_ccopt_property extracted_from_delay_corners -skew_group clk/CM_ideal {DC_max DC_min}
+<CMD> create_ccopt_skew_group -name clk/CM_ideal_cts -sources clk -auto_sinks
+The skew group clk/CM_ideal_cts was created. It contains 155 sinks and 1 sources.
+<CMD> set_ccopt_property include_source_latency -skew_group clk/CM_ideal_cts true
+<CMD> set_ccopt_property extracted_from_clock_name -skew_group clk/CM_ideal_cts clk
+<CMD> set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/CM_ideal_cts CM_ideal_cts
+<CMD> set_ccopt_property extracted_from_delay_corners -skew_group clk/CM_ideal_cts {DC_max DC_min}
+<CMD> check_ccopt_clock_tree_convergence
+Checking clock tree convergence...
+Checking clock tree convergence done.
+<CMD> get_ccopt_property auto_design_state_for_ilms
+<CMD> ccopt_design -cts
+#% Begin ccopt_design (date=06/04 11:09:03, mem=855.8M)
+Turning off fast DC mode./nRuntime...
+**INFO: User's settings:
+setNanoRouteMode -droutePostRouteSpreadWire         1
+setNanoRouteMode -extractThirdPartyCompatible       false
+setNanoRouteMode -grouteExpTdStdDelay               58.4
+setNanoRouteMode -timingEngine                      {}
+setDesignMode -process                              180
+setExtractRCMode -coupling_c_th                     3
+setExtractRCMode -engine                            preRoute
+setExtractRCMode -relative_c_th                     0.03
+setExtractRCMode -total_c_th                        5
+setDelayCalMode -enable_high_fanout                 true
+setDelayCalMode -eng_copyNetPropToNewNet            true
+setDelayCalMode -engine                             aae
+setDelayCalMode -ignoreNetLoad                      false
+setPlaceMode -maxRouteLayer                         6
+setPlaceMode -place_detail_check_route              false
+setPlaceMode -place_detail_preserve_routing         true
+setPlaceMode -place_detail_remove_affected_routing  false
+setPlaceMode -place_detail_swap_eeq_cells           false
+setPlaceMode -place_global_clock_gate_aware         true
+setPlaceMode -place_global_cong_effort              auto
+setPlaceMode -place_global_ignore_scan              true
+setPlaceMode -place_global_ignore_spare             true
+setPlaceMode -place_global_module_aware_spare       false
+setPlaceMode -place_global_place_io_pins            true
+setPlaceMode -place_global_reorder_scan             false
+setPlaceMode -powerDriven                           false
+setPlaceMode -timingDriven                          true
+setRouteMode -earlyGlobalHonorMsvRouteConstraint    false
+setRouteMode -earlyGlobalRoutePartitionPinGuide     true
+
+(ccopt_design): CTS Engine: auto. Used Spec: pre-existing CCOPT spec.
+Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+Set place::cacheFPlanSiteMark to 1
+CCOpt::Phase::Initialization...
+Check Prerequisites...
+Leaving CCOpt scope - CheckPlace...
+Begin checking placement ... (start mem=1066.5M, init mem=1074.5M)
+*info: Placed = 2073          
+*info: Unplaced = 0           
+Placement Density:58.72%(46408/79027)
+Placement Density (including fixed std cells):58.72%(46408/79027)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1074.5M)
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:00.0 real=0:00:00.0)
+**WARN: (IMPCCOPT-2015):	Innovus will not update I/O latencies for the following reason(s):
+ * CCOpt property update_io_latency is false
+
+Found 0 ideal nets, 0 pins with transition annotations, 0 instances with delay annotations, 0 nets with delay annotations, refer to logv for details.
+
+Check Prerequisites done. (took cpu=0:00:00.0 real=0:00:00.0)
+CCOpt::Phase::Initialization done. (took cpu=0:00:00.0 real=0:00:00.0)
+Executing ccopt post-processing.
+Synthesizing clock trees with CCOpt...
+CCOpt::Phase::PreparingToBalance...
+Leaving CCOpt scope - Initializing power interface...
+Leaving CCOpt scope - Initializing power interface done. (took cpu=0:00:00.0 real=0:00:00.0)
+Found 0 advancing pin insertion delay (0.000% of 155 clock tree sinks)
+Found 0 delaying pin insertion delay (0.000% of 155 clock tree sinks)
+Leaving CCOpt scope - optDesignGlobalRouteStep...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] ME1 has no routable track
+[NR-eGR] ME2 has single uniform track structure
+[NR-eGR] ME3 has single uniform track structure
+[NR-eGR] ME4 has single uniform track structure
+[NR-eGR] ME5 has single uniform track structure
+[NR-eGR] ME6 has single uniform track structure
+[NR-eGR] Started Read PG Shapes ( Curr Mem: 1080.25 MB )
+[NR-eGR] Read 9034 PG shapes
+[NR-eGR] Finished Read PG Shapes ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1080.25 MB )
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 9034
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=2341  numIgnoredNets=0
+[NR-eGR] There are 9 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 2341 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 2341 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 7.22% H + 1.48% V. EstWL: 6.806912e+04um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon           OverCon            
+[NR-eGR]                         #Gcell            #Gcell     %Gcell
+[NR-eGR]       Layer                (1)               (4)    OverCon 
+[NR-eGR] ---------------------------------------------------------------
+[NR-eGR]     ME1  (1)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]     ME2  (2)        49( 0.59%)         3( 0.04%)   ( 0.63%) 
+[NR-eGR]     ME3  (3)       325( 3.95%)        25( 0.30%)   ( 4.26%) 
+[NR-eGR]     ME4  (4)        20( 0.24%)         0( 0.00%)   ( 0.24%) 
+[NR-eGR]     ME5  (5)        92( 1.12%)         1( 0.01%)   ( 1.13%) 
+[NR-eGR]     ME6  (6)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ---------------------------------------------------------------
+[NR-eGR] Total              486( 1.25%)        29( 0.07%)   ( 1.33%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 2.78% H + 0.23% V
+[NR-eGR] Overflow after Early Global Route 3.40% H + 0.29% V
+[NR-eGR] Started Export DB wires ( Curr Mem: 1080.25 MB )
+[NR-eGR] Started Export all nets ( Curr Mem: 1080.25 MB )
+[NR-eGR] Finished Export all nets ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1080.25 MB )
+[NR-eGR] Started Set wire vias ( Curr Mem: 1080.25 MB )
+[NR-eGR] Finished Set wire vias ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1080.25 MB )
+[NR-eGR] Finished Export DB wires ( CPU: 0.00 sec, Real: 0.01 sec, Curr Mem: 1080.25 MB )
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR]    ME1  (1F) length: 0.000000e+00um, number of vias: 6740
+[NR-eGR]    ME2  (2V) length: 3.227496e+04um, number of vias: 10154
+[NR-eGR]    ME3  (3H) length: 2.460758e+04um, number of vias: 1048
+[NR-eGR]    ME4  (4V) length: 5.038350e+03um, number of vias: 811
+[NR-eGR]    ME5  (5H) length: 1.122488e+04um, number of vias: 10
+[NR-eGR]    ME6  (6V) length: 3.920000e+00um, number of vias: 0
+[NR-eGR] Total length: 7.314969e+04um, number of vias: 18763
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 2.615910e+03um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Finished Early Global Route kernel ( CPU: 0.03 sec, Real: 0.04 sec, Curr Mem: 1080.25 MB )
+Leaving CCOpt scope - optDesignGlobalRouteStep done. (took cpu=0:00:00.0 real=0:00:00.0)
+Rebuilding timing graph...
+Rebuilding timing graph done.
+Legalization setup...
+Using cell based legalization.
+**WARN: (IMPSP-105):	'setPlaceMode -maxRouteLayer' will become obsolete from next release. Use 'setRouteMode -earlyGlobalMaxRouteLayer N' to set maximum routing layer.Type 'man IMPSP-105' for more detail.
+Legalization setup done. (took cpu=0:00:00.0 real=0:00:00.0)
+Validating CTS configuration...
+Checking module port directions...
+Checking module port directions done. (took cpu=0:00:00.0 real=0:00:00.0)
+Non-default CCOpt properties:
+route_type is set for at least one object
+source_max_capacitance is set for at least one object
+target_insertion_delay is set for at least one object
+target_max_trans_sdc is set for at least one object
+update_io_latency: 0 (default: true)
+Route type trimming info:
+  No route type modifications were made.
+**WARN: (IMPCCOPT-1184):	The library has no usable balanced inverters for power domain auto-default, while balancing clock_tree clk. If this is not intended behavior, you can specify a list of lib_cells to use with the inverter_cells property.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+**ERROR: (IMPCCOPT-1209):	Non-leaf slew time target of 0.100ns is too low on both rising and falling edges. The largest clock gate is unable to drive the largest buffer in power_domain auto-default. To adhere to the given slope target, you will need to select a stronger clock gate, increase the slew target to at least 0.120ns or remove these driver cells from the CTS cell lists: DEL1 .
+Type 'man IMPCCOPT-1209' for more detail.
+Clock tree balancer configuration for clock_tree clk:
+Non-default CCOpt properties:
+  route_type (leaf): default_route_type_leaf (default: default)
+  route_type (trunk): default_route_type_nonleaf (default: default)
+  route_type (top): default_route_type_nonleaf (default: default)
+  source_max_capacitance: 150 (default: auto)
+For power domain auto-default:
+  Buffers:     DEL1 
+  Inverters:   
+  Clock gates: ICGD1 
+  Unblocked area available for placement of any clock cells in power_domain auto-default: 79027.200um^2
+Top Routing info:
+  Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: ME4/ME3; 
+  Unshielded; Mask Constraint: 0; Source: route_type.
+Trunk Routing info:
+  Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: ME4/ME3; 
+  Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: route_type.
+Leaf Routing info:
+  Route-type name: default_route_type_leaf; Top/bottom preferred layer name: ME4/ME3; 
+  Unshielded; Preferred extra space: 1; Mask Constraint: 0; Source: route_type.
+For timing_corner DC_max:setup, late and power domain auto-default:
+  Slew time target (leaf):    0.100ns (Too low; min: 1.150ns)
+  Slew time target (trunk):   0.100ns (Too low; min: 1.150ns)
+  Slew time target (top):     0.100ns (Note: no nets are considered top nets in this clock tree)
+  Buffer unit delay: 0.350ns
+  Buffer max distance: 40.000um
+Fastest wire driving cells and distances:
+  Buffer    : {lib_cell:DEL1, fastest_considered_half_corner=DC_max:setup.late, optimalDrivingDistance=0.000um, saturatedSlew=0.100ns, speed=0.000um per ns, cellArea=0.000um^2 per 1000um}
+  Clock gate: {lib_cell:ICGD1, fastest_considered_half_corner=DC_max:setup.late, optimalDrivingDistance=0.000um, saturatedSlew=0.100ns, speed=0.000um per ns, cellArea=0.000um^2 per 1000um}
+
+**ERROR: (IMPCCOPT-1013):	The target_max_trans is too low for at least one clock tree, net type and timing corner. Search the log for the string 'Too low;' to find the minimum acceptable targets for each combination. CTS will now terminate.
+Type 'man IMPCCOPT-1013' for more detail.
+
+Logic Sizing Table:
+
+----------------------------------------------------------
+Cell    Instance count    Source    Eligible library cells
+----------------------------------------------------------
+  (empty table)
+----------------------------------------------------------
+
+
+Clock tree timing engine global stage delay update for DC_max:setup.late...
+Clock tree timing engine global stage delay update for DC_max:setup.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree balancer configuration for skew_group clk/CM_ideal:
+  Sources:                     pin clk
+  Total number of sinks:       155
+  Delay constrained sinks:     147
+  Non-leaf sinks:              0
+  Ignore pins:                 0
+ Timing corner DC_max:setup.late:
+  Skew target:                 0.000ns
+  Insertion delay target:      1.000ns
+Clock tree balancer configuration for skew_group clk/CM_ideal_cts:
+  Sources:                     pin clk
+  Total number of sinks:       155
+  Delay constrained sinks:     147
+  Non-leaf sinks:              0
+  Ignore pins:                 0
+ Timing corner DC_max:setup.late:
+  Skew target:                 0.000ns
+**WARN: (IMPCCOPT-1361):	Routing configuration for top nets in clock tree clk: preferred layers ME3-ME4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+**WARN: (IMPCCOPT-1361):	Routing configuration for trunk nets in clock tree clk: preferred layers ME3-ME4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+**WARN: (IMPCCOPT-1361):	Routing configuration for leaf nets in clock tree clk: preferred layers ME3-ME4 are outside NanoRoute configured layer range. This is likely to cause routing correlation issues.
+Primary reporting skew groups are:
+skew_group clk/CM_ideal with 155 clock sinks
+
+Clock DAG stats initial state:
+  cell counts      : b=0, i=0, icg=0, nicg=8, l=0, total=8
+  cell areas       : b=0.000um^2, i=0.000um^2, icg=0.000um^2, nicg=120.422um^2, l=0.000um^2, total=120.422um^2
+  hp wire lengths  : top=0.000um, trunk=0.000um, leaf=1186.870um, total=1186.870um
+Clock DAG library cell distribution initial state {count}:
+  NICGs: AN2D1: 8 
+
+Distribution of half-perimeter wire length by ICG depth:
+
+-----------------------------------------------------------------------------
+Min ICG    Max ICG    Count    HPWL
+Depth      Depth               (um)
+-----------------------------------------------------------------------------
+   0          0         8      [min=30, max=483, avg=148, sd=145, total=1187]
+   0          1         1      [min=362, max=362, avg=362, sd=0, total=362]
+-----------------------------------------------------------------------------
+
+**WARN: (IMPCCOPT-2314):	CCOpt found 1 clock tree nets marked as ideal or dont_touch. These will not be buffered.
+
+Ideal and dont_touch net fanout counts:
+
+-----------------------------------------------------------
+Min fanout    Max fanout    Number of ideal/dont_touch nets
+-----------------------------------------------------------
+      1            10                      0
+     11           100                      1
+    101          1000                      0
+   1001         10000                      0
+  10001           +                        0
+-----------------------------------------------------------
+
+Top ideal and dont_touch nets by fanout:
+
+---------------------
+Net name    Fanout ()
+---------------------
+clk            27
+---------------------
+
+
+No dont_touch hnets found in the clock tree
+Validating CTS configuration done. (took cpu=0:00:00.1 real=0:00:00.1)
+
+CCOpt configuration status: cannot run ccopt_design.
+Check the log for details of problem(s) found:
+
+---------------------------------------------------
+Design configuration problems
+---------------------------------------------------
+One or more clock trees have configuration problems
+---------------------------------------------------
+
+Clock tree configuration problems:
+
+------------------------------------------------------
+Clock tree    Problem
+------------------------------------------------------
+clk           The maximum transition target is too low
+------------------------------------------------------
+
+
+CCOpt::Phase::PreparingToBalance done. (took cpu=0:00:00.2 real=0:00:00.2)
+Runtime done. (took cpu=0:00:00.2 real=0:00:00.2)
+Runtime Summary
+===============
+Clock Runtime:  (69%) Core CTS           0.15 (Init 0.15, Construction 0.00, Implementation 0.00, eGRPC 0.00, PostConditioning 0.00, Other 0.00)
+Clock Runtime:   (0%) CTS services       0.00 (RefinePlace 0.00, EarlyGlobalClock 0.00, NanoRoute 0.00, ExtractRC 0.00, TimingAnalysis 0.00)
+Clock Runtime:  (30%) Other CTS          0.07 (Init 0.07, CongRepair/EGR-DP 0.00, TimingUpdate 0.00, Other 0.00)
+Clock Runtime: (100%) Total              0.22
+
+**WARN: (IMPSP-105):	'setPlaceMode -maxRouteLayer' will become obsolete from next release. Use 'setRouteMode -earlyGlobalMaxRouteLayer N' to set maximum routing layer.Type 'man IMPSP-105' for more detail.
+**ERROR: (IMPCCOPT-2196):	Cannot run ccopt_design because the command prerequisites were not met. Review the previous error messages for more details about the failure.
+Set place::cacheFPlanSiteMark to 0
+3
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-105            4  'setPlaceMode -maxRouteLayer' will becom...
+WARNING   IMPCCOPT-2314        1  CCOpt found %u clock tree nets marked as...
+WARNING   IMPCCOPT-1361        3  Routing configuration for %s nets in clo...
+ERROR     IMPCCOPT-2196        1  Cannot run ccopt_design because the comm...
+WARNING   IMPCCOPT-1184        1  The library has no usable balanced %ss f...
+ERROR     IMPCCOPT-1209        1  Non-leaf slew time target of %s%s is too...
+WARNING   IMPCCOPT-2015        1  %s will not update I/O latencies for the...
+ERROR     IMPCCOPT-1013        1  The target_max_trans is too low for at l...
+*** Message Summary: 10 warning(s), 3 error(s)
+
+#% End ccopt_design (date=06/04 11:09:04, total cpu=0:00:00.3, real=0:00:01.0, peak res=899.8M, current mem=899.8M)
+
+<CMD> get_ccopt_clock_trees
+Cannot run clock tree spec: clock trees are already defined.
+**INFO (INTERRUPT): The current script will stop before next command.
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0

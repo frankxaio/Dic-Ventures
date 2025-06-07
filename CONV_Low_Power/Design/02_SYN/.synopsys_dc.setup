@@ -16,6 +16,10 @@ set_app_var target_library   "UDVS_u018mmwc162v.db UDVS_u018mmwc054v.db UDVS_u01
                         UDVS_u018mmbc198v.db UDVS_u018mmbc132v.db UDVS_u018mmbc066v.db
                         UDVS_u018mmtc18v.db UDVS_u018mmtc06v.db UDVS_u018mmtc12v.db"
 
+# 1.2v target library
+# set_app_var target_library   "UDVS_u018mmwc108v.db UDVS_u018mmtc12v.db UDVS_u018mmbc132v.db"
+
+
 # Check your corner files
 set_app_var link_library     "* $target_library dw_foundation.sldb"
 

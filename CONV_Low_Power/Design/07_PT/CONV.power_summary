@@ -1,0 +1,38 @@
+****************************************
+Report : Time Based Power
+Design : CONV
+Version: T-2022.03
+Date   : Mon May 26 14:46:54 2025
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           8.953e-04 2.823e-04 8.287e-09 1.178e-03 (10.92%)  i
+register                5.711e-04 4.188e-04 6.670e-07 9.906e-04 ( 9.19%)  
+combinational           4.014e-03 4.597e-03 5.188e-06 8.616e-03 (79.90%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 5.298e-03   (49.13%)
+  Cell Internal Power  = 5.480e-03   (50.82%)
+  Cell Leakage Power   = 5.864e-06   ( 0.05%)
+                         ---------
+Total Power            =    0.0108  (100.00%)
+
+X Transition Power     = 5.238e-08
+Glitching Power        = 4.660e-05
+
+Peak Power             =    0.0774
+Peak Time              = 46146.4466
+
+1
