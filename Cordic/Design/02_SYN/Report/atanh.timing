@@ -6,7 +6,7 @@ Report : timing
         -max_paths 3
 Design : atanh
 Version: T-2022.03-SP2
-Date   : Wed Jun 11 03:46:47 2025
+Date   : Wed Jun 11 03:51:25 2025
 ****************************************
 
 Operating Conditions: slow   Library: slow

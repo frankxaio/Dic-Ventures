@@ -7,7 +7,7 @@ set CYCLE 15.0
 set INPUT_DLY   [expr {$CYCLE/2}]
 set OUTPUT_DLY  [expr {$CYCLE/2}]
 set CLOCK_NAME "clk"
-set RESET_NAME "reset"
+set RESET_NAME "rstn"
 
 if {[info exists env(ROOT_PATH)]} {
     puts "ROOT_PATH is: $env(ROOT_PATH)"

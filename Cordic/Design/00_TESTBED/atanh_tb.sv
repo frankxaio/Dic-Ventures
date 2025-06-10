@@ -1,5 +1,5 @@
 `define CYCLE 50
-`define SDFFILE "../02_SYN/Netlist/ATANH_syn.sdf"
+`define SDFFILE "../02_SYN/Netlist/atanh_syn.sdf"
 
 // TODO test vector
 // TODO

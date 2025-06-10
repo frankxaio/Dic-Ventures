@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Wed Jun 11 03:46:48 2025
+# Created by write_sdc on Wed Jun 11 03:51:25 2025
 
 ###################################################################
 set sdc_version 2.1
@@ -68,8 +68,7 @@ set_clock_transition -min -rise 0.1 [get_clocks clk]
 set_clock_transition -min -fall 0.1 [get_clocks clk]
 set_input_delay -clock clk  -max 7.5  [get_ports clk]
 set_input_delay -clock clk  -min 0  [get_ports clk]
-set_input_delay -clock clk  -max 7.5  [get_ports rstn]
-set_input_delay -clock clk  -min 0  [get_ports rstn]
+set_input_delay -clock clk  0  [get_ports rstn]
 set_input_delay -clock clk  -max 7.5  [get_ports trig]
 set_input_delay -clock clk  -min 0  [get_ports trig]
 set_input_delay -clock clk  -max 7.5  [get_ports {tanha[8]}]
