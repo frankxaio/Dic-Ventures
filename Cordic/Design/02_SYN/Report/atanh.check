@@ -1,0 +1,17 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP2
+Date:        Wed Jun 11 03:45:15 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                                3
+    Unloaded nets (LINT-2)                                          3
+--------------------------------------------------------------------------------
+
+Warning: In design 'atanh', net 'net154' driven by pin 'C1326/Z' has no loads. (LINT-2)
+Warning: In design 'atanh', net 'net153' driven by pin 'C1329/Z' has no loads. (LINT-2)
+Warning: In design 'atanh', net 'net152' driven by pin 'C1032/Z' has no loads. (LINT-2)
+1

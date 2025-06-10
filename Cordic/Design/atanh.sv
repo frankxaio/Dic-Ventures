@@ -4,29 +4,32 @@
 // TODO when cnt = 4 iteration more once
 // TODO tt replaced with a tanh LUT
 // TODO iteration formula update for hyperbolic rotation
+// TODO
 
 
 module atanh (
-  input                     clk,
-  input                     rstn,
-  input                     trig,
-  input  signed       [8:0] tanha,
-  output logic              vld,
+  input                    clk,
+  input                    rstn,
+  input                    trig,
+  input  signed     [8:0] tanha,
+  output logic               vld,
   output logic signed [8:0] a2_latch
 );
 
   //-----------------------------------------
   logic        [ 4:0] cnt;
   logic               vld_pre;
-  logic        [18:0] tt;  // Q1.18
-  logic signed [18:0] tmp1;  // Q1.18
-  logic        [18:0] tmp2;  // Q1.18
+  logic        [19:0] tt;
+  logic signed [26:0] tmp1;
+  logic        [26:0] tmp2;
 
-  logic        [18:0] x;  // Q1.18
-  logic signed [18:0] tanha2;  // Q1.18
-  logic signed [20:0] a; // Q1.20, 20 = 12+8
+  logic        [26:0] x;
+  logic signed [26:0] tanha2;
+  logic signed [20:0] a;
 
+  logic signed [ 9:0] a2_tmp;
   logic signed [ 8:0] a2;
+
 
   // control  -----------------------------------------
   always_ff @(posedge clk or negedge rstn) begin
@@ -86,7 +89,7 @@ module atanh (
 
   always_comb begin
     case (cnt)
-      5'd00:   tmp1 = '0;  // cnt=0
+      5'd00:   tmp1 = 27'd0;  // cnt=0
       5'd01:   tmp1 = tanha2 >>> 1;  // itr 1
       5'd02:   tmp1 = tanha2 >>> 2;  // itr 2
       5'd03:   tmp1 = tanha2 >>> 3;  // itr 3
@@ -108,13 +111,13 @@ module atanh (
       5'd19:   tmp1 = tanha2 >>> 17;  // itr 17
       5'd20:   tmp1 = tanha2 >>> 18;  // itr 18
       5'd21:   tmp1 = tanha2 >>> 19;  // itr 19
-      default: tmp1 = '0;
+      default: tmp1 = 27'd0;
     endcase
   end
 
   always_comb begin
     case (cnt)
-      5'd00:   tmp2 = '0;  // cnt=0
+      5'd00:   tmp2 = 27'd0;  // cnt=0
       5'd01:   tmp2 = x >> 1;  // itr 1
       5'd02:   tmp2 = x >> 2;  // itr 2
       5'd03:   tmp2 = x >> 3;  // itr 3
@@ -136,7 +139,7 @@ module atanh (
       5'd19:   tmp2 = x >> 17;  // itr 17
       5'd20:   tmp2 = x >> 18;  // itr 18
       5'd21:   tmp2 = x >> 19;  // itr 19
-      default: tmp2 = 'd0;
+      default: tmp2 = 27'd0;
     endcase
   end
 
@@ -145,16 +148,16 @@ module atanh (
 
   always_ff @(posedge clk or negedge rstn) begin
     if (!rstn) begin
-      x      <= '0;
-      tanha2 <= '0;
-      a      <= '0;
+      x      <= 27'd0;
+      tanha2 <= 27'd0;
+      a      <= 21'd0;
     end else begin
       if (cnt == 5'd0) begin
-        x      <= 'd262144;  // 2^18 == 262144
+        x      <= 27'd262144;
         tanha2 <= tanha <<< 10;
-        a      <= '0;
+        a      <= 21'd0;
       end else begin
-        if (!tanha2[18]) begin
+        if (!tanha2[26]) begin
           x      <= signed'({1'b0, x}) - tmp1;
           tanha2 <= tanha2 - signed'({1'b0, tmp2});
           a      <= a + signed'({1'b0, tt});
@@ -168,6 +171,7 @@ module atanh (
   end
 
 
+  // assign a2_tmp = (a >>> 11) + signed'(10'd1);
   // assign a2     = a2_tmp >>> 1;
   assign a2 = a >>> 12;
 

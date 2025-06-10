@@ -68,7 +68,7 @@ GATE = vcs ${TIMESCALE} \
     -l ${log_file} \
     -P ${VERDI_HOME}/share/PLI/VCS/linux64/novas.tab \
        ${VERDI_HOME}/share/PLI/VCS/linux64/pli.a \
-	-v ${U18_SIM} \
+	-v ${T18_SIM} \
     +define+GATE \
 	+neg_tchk \
 

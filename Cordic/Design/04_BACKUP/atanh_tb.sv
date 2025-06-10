@@ -40,9 +40,6 @@ module atanh_tb;
     $fsdbDumpvars(0);
   end
 
-  `ifdef GATE
-    initial $sdf_annotate(`SDFFILE, u_atanh);
-  `endif
 
   //-----------------------------------------------------------
   initial begin
@@ -61,8 +58,9 @@ module atanh_tb;
 
   initial begin
     delt     = 0.00390625;  // 1/2^8
-    delt_a   = 0.006135923151543; // 2*pi / 1024
-    tanha    = -1+delt; // avoid tanha is -inf in -1
+    // delt     = 2.441406250000000e-04;  // 1/2^12
+    delt_a   = 0.006135923151543;
+    tanha    = -1;
     tana_fix = int'(tanha / delt);
     trig     = 0;
     a        = 0;
@@ -94,8 +92,6 @@ module atanh_tb;
           if (err > max_err) max_err = err;
         end
       join
-
-      $display("tanha = %.6f, a = %.5f, a_real = %.5f, err = %.6f", tanha, a, a_real, err);
 
       tanha = tanha + delt;
     end

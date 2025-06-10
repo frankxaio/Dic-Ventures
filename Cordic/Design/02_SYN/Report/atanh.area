@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : atanh
+Version: T-2022.03-SP2
+Date   : Wed Jun 11 03:46:47 2025
+****************************************
+
+Library(s) Used:
+
+    slow (File: /cad/CBDK/CBDK_TSMC018_Arm_f1.0/CIC/SynopsysDC/db/slow.db)
+
+Number of ports:                           22
+Number of nets:                           728
+Number of cells:                          634
+Number of combinational cells:            559
+Number of sequential cells:                75
+Number of macros/black boxes:               0
+Number of buf/inv:                         38
+Number of references:                      42
+
+Combinational area:              11665.684926
+Buf/Inv area:                      279.417604
+Noncombinational area:            4740.119934
+Macro/Black Box area:                0.000000
+Net Interconnect area:           85820.428223
+
+Total cell area:                 16405.804860
+Total area:                     102226.233083
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+atanh                             16405.8049    100.0  11665.6849  4740.1199  0.0000  atanh
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+Total                                                  11665.6849  4740.1199  0.0000
+
+1
